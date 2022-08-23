@@ -1,0 +1,152 @@
+@import './../../styles/sass/colors.scss';
+
+.list-repo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+}
+.cards {
+  position: relative;
+  width: 385px;
+  height: 250px;
+  margin: 50px 10px;
+  border: solid $light_main 1px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px;
+  transition: 0.3s;
+  color: #fff;
+  overflow: hidden;
+  cursor: pointer;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+  }
+  .legend {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 33%;
+    border-top: solid 1px;
+    transition: 0.3s;
+    z-index: 55;
+    h2 {
+      margin: 15px;
+      width: 100%;
+      height: 5%;
+    }
+    .techList {
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      width: 100%;
+      height: 20%;
+      margin: 15px;
+    }
+    .project_descript {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: none;
+      margin: auto;
+      width: 70%;
+      height: 60%;
+      text-align: center;
+      transition: 0.3s;
+      overflow: hidden;
+      animation: slide 10s linear infinite;
+    }
+  }
+  &:hover {
+    transform: scale(1.07);
+  }
+  &:focus {
+    transform: scale(1.07);
+  }
+  &:hover .legend {
+    border-top: none;
+    height: 100%;
+  }
+  &:focus .legend {
+    border-top: none;
+    height: 100%;
+  }
+  &:hover img {
+    filter: blur(7px) grayscale(70%);
+  }
+  &:focus img {
+    filter: blur(7px) grayscale(70%);
+  }
+
+  &:hover .project_descript {
+    display: block;
+  }
+  &:focus .project_descript {
+    display: none;
+  }
+
+  &:hover .legend > .languageList {
+    margin: auto;
+    padding: 15px;
+    background: rgb(0, 0, 0);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 22%,
+      rgba(0, 0, 0, 0.6278886554621849) 80%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+  &:focus .legend > .languageList {
+    margin: auto;
+    padding: 15px;
+    background: rgb(0, 0, 0);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 22%,
+      rgba(0, 0, 0, 0.6278886554621849) 80%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+
+  &:hover .legend > h2 {
+    margin: auto;
+    padding: 15px;
+
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 1) 22%,
+      rgba(0, 0, 0, 0.6278886554621849) 80%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+  &:focus .legend > h2 {
+    margin: auto;
+    padding: 15px;
+
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 1) 22%,
+      rgba(0, 0, 0, 0.6278886554621849) 80%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(75%);
+  }
+
+  100% {
+    transform: translateY(-75%);
+  }
+}
