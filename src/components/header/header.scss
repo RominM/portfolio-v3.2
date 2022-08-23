@@ -1,0 +1,69 @@
+@import './../../styles/sass/colors.scss';
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 85%;
+  // height: 205px;
+  margin: 25px auto;
+  .description {
+    max-width: 50%;
+    &:first-child {
+      margin-inline-start: 25px;
+      margin-top: 40px;
+      h1 {
+        display: inline;
+        font-size: clamp(3em, 2.5rem, 2em);
+        color: $light_main;
+      }
+    }
+    p {
+      margin: 25px 0 45px;
+    }
+  }
+  .picture {
+    a {
+      display: block;
+      width: 205px;
+      height: 205px;
+      margin: auto;
+      img {
+        border: solid 2px $light_main;
+        border-radius: 50%;
+        box-shadow: 3px 3px 10px #000;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 522px) {
+  header {
+    width: 100%;
+    margin: 0;
+    .description {
+      max-width: 98%;
+      text-align: center;
+      margin-right: 18px;
+    }
+    .picture {
+      a {
+        height: 0;
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          width: 100%;
+          height: 40vw;
+          border: none;
+          object-fit: cover;
+          object-position: 50% 25%;
+          opacity: 0.2;
+          border-radius: 0;
+        }
+      }
+    }
+  }
+}

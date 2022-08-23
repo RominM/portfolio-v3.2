@@ -1,0 +1,197 @@
+[
+  {
+    "id": "",
+    "title": "Reservia",
+    "descript": "Approche on basic language HTML & CSS. Make a single page model real",
+    "cover": "/images/revervia_cover.png",
+    "link": "https://rominm.github.io/RominManogil_2_08022021/",
+    "tags": [
+      "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
+      "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
+    ]
+  },
+  {
+    "id": "",
+    "title": "Oh my food",
+    "descript": "Navigation in local with different link. Creat all page then make little CSS animation",
+    "cover": "/images/ohmyfood_cover.jpg",
+    "link": "https://rominm.github.io/RominManogil_03_18032021/",
+    "tags": [
+      "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
+      "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+      "https://www.vectorlogo.zone/logos/npmjs/npmjs-ar21.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"
+    ]
+  },
+  {
+    "id": "",
+    "title": "GameOn",
+    "descript": "Handle a validation of formular with Javascript, required fields then generate an error message",
+    "cover": "/images/gameOn_cover.png",
+    "link": "https://rominm.github.io/RominManogil_04_18032021/",
+    "tags": [
+      "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
+      "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+      "https://www.vectorlogo.zone/logos/npmjs/npmjs-ar21.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+    ]
+  },
+  {
+    "id": "",
+    "title": "FishEyes",
+    "descript": "Multi-task in Vanilla Javascript project dynamicly with nativ loop and accessiblity",
+    "cover": "/images/fisheys_cover.PNG",
+    "link": "https://rominm.github.io/RominManogil_06_07062021/",
+    "tags": [
+      "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
+      "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+      "https://www.vectorlogo.zone/logos/npmjs/npmjs-ar21.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+    ]
+  },
+  {
+    "id": "",
+    "title": "Les petits plats",
+    "descript": "Creating a searching algorythme among different recipes",
+    "cover": "/images/les-petits-plats_cover.PNG",
+    "link": "https://rominm.github.io/RominManogil_07_13092021/",
+    "tags": [
+      "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
+      "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+      "https://www.vectorlogo.zone/logos/npmjs/npmjs-ar21.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+    ]
+  },
+  {
+    "id": "",
+    "title": "Billed",
+    "descript": "Test writing with Jest on a RH Saas",
+    "cover": "/images/billed_cover.png",
+    "link": "https://rominm.github.io/Billed-app-FR/",
+    "tags": [
+      "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
+      "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+      "https://www.vectorlogo.zone/logos/npmjs/npmjs-ar21.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+      "https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg"
+    ]
+  },
+
+  {
+    "id": "",
+    "title": "Learn@Home",
+    "descript": "Model creation and all process of developpement with agil method and kanban",
+    "cover": "/images/learn-at-home_cover.PNG",
+    "link": "https://www.figma.com/file/aC1xZLdxynh24yQ9evfnx3/Learn%40Home?node-id=0%3A1",
+    "tags": ["https://www.vectorlogo.zone/logos/figma/figma-icon.svg"]
+  },
+
+  {
+    "id": "",
+    "title": "Kasa",
+    "descript": "Simple React application with navigation by React-router",
+    "cover": "/images/kasa_cover.PNG",
+    "link": "https://rominmanogil-p11-kasa.netlify.app/",
+    "tags": [
+      "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
+      "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+      "https://www.vectorlogo.zone/logos/npmjs/npmjs-ar21.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+    ]
+  },
+  {
+    "id": "",
+    "title": "SportSee",
+    "descript": "Using React then reachart from api data",
+    "cover": "/images/sportSee_cover.PNG",
+    "link": "https://sportsee-mgl-p12.netlify.app/",
+    "tags": [
+      "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
+      "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+      "https://www.vectorlogo.zone/logos/npmjs/npmjs-ar21.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+    ]
+  },
+  {
+    "id": "",
+    "title": "ArgentBank",
+    "descript": "Handle a security authantication to bank account by Redux and writing the swagger",
+    "cover": "/images/argent-bank_cover.png",
+    "link": "",
+    "tags": [
+      "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
+      "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+      "https://www.vectorlogo.zone/logos/npmjs/npmjs-ar21.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg"
+    ]
+  },
+  {
+    "id": "",
+    "title": "HRnet",
+    "descript": "Refont a JQuery app in full React app then create a npm package",
+    "cover": "/images/hrnet_cover.png",
+    "link": "https://hrrnet-rm.netlify.app/",
+    "tags": [
+      "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
+      "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+      "https://www.vectorlogo.zone/logos/npmjs/npmjs-ar21.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg"
+    ]
+  },
+  {
+    "id": "",
+    "title": "this.",
+    "descript": "My portefolio to present you all of my project",
+    "cover": "/images/portfolio_cover.PNG",
+    "link": "https://rominmanogil-portfolio.netlify.app/",
+    "tags": [
+      "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
+      "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+      "https://www.vectorlogo.zone/logos/npmjs/npmjs-ar21.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+    ]
+  },
+  {
+    "id": "",
+    "title": "Space Tourisme",
+    "descript": "Challenge from frontendmentor.io for a starship tourisme",
+    "cover": "/images/space-tourisme_cover.png",
+    "link": "https://space-tourisme-rm.netlify.app/",
+    "tags": [
+      "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
+      "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+      "https://www.vectorlogo.zone/logos/npmjs/npmjs-ar21.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+    ]
+  }
+]

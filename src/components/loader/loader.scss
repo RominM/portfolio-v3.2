@@ -1,0 +1,49 @@
+.load-context {
+  align-items: center;
+  animation: animate-bg 5s linear infinite;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  justify-content: center;
+
+  &_loader {
+    display: inline-block;
+    height: 80px;
+    position: relative;
+    width: 80px;
+
+    div {
+      animation: spin-03 1s linear infinite;
+      transform-origin: 40px 40px;
+
+      &:after {
+        background: #000;
+        border-radius: 20%;
+        content: ' ';
+        display: block;
+        height: 18px;
+        left: 37px;
+        position: absolute;
+        top: 3px;
+        width: 6px;
+      }
+
+      @for $i from 1 through 12 {
+        &:nth-child(#{$i}) {
+          animation-delay: 0.1s * $i;
+          transform: rotate(30deg * $i);
+        }
+      }
+    }
+  }
+}
+
+@keyframes spin-03 {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
