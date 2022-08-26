@@ -171,7 +171,7 @@ header .picture a img {
   margin: 50px 10px;
   border: solid #0500ff 1px;
   border-radius: 10px;
-  box-shadow: 3px 3px 10px;
+  box-shadow: 10px 10px 15px #000;
   transition: 0.3s;
   color: #fff;
   overflow: hidden;

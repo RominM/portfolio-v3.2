@@ -42,7 +42,7 @@
   },
   {
     "id": "",
-    "title": "FishEyes",
+    "title": "FishEye",
     "descript": "Multi-task in Vanilla Javascript project dynamicly with nativ loop and accessiblity",
     "cover": "/images/fisheys_cover.PNG",
     "link": "https://rominm.github.io/RominManogil_06_07062021/",
@@ -89,7 +89,7 @@
 
   {
     "id": "",
-    "title": "Learn@Home",
+    "title": "LearnatHome",
     "descript": "Model creation and all process of developpement with agil method and kanban",
     "cover": "/images/learn-at-home_cover.PNG",
     "link": "https://www.figma.com/file/aC1xZLdxynh24yQ9evfnx3/Learn%40Home?node-id=0%3A1",
@@ -160,22 +160,6 @@
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg"
-    ]
-  },
-  {
-    "id": "",
-    "title": "this.",
-    "descript": "My portefolio to present you all of my project",
-    "cover": "/images/portfolio_cover.PNG",
-    "link": "https://rominmanogil-portfolio.netlify.app/",
-    "tags": [
-      "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg",
-      "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
-      "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
-      "https://www.vectorlogo.zone/logos/npmjs/npmjs-ar21.svg",
-      "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
-      "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
-      "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
     ]
   },
   {

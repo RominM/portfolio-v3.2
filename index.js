@@ -14,7 +14,9 @@ const initIndex = async () => {
   const repositories_url = github_data.repos_url;
 
   const annexe_data = await getData(ANNEXE_URL);
+
   const newData = await convertData(repositories_url, annexe_data);
+  console.log(newData);
 
   switchTheme(switchBtn, body);
   header(github_data);
