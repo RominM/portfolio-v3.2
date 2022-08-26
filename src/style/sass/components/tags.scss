@@ -1,0 +1,17 @@
+.tags {
+  display: flex;
+  li {
+    background-color: #fff;
+    margin: 10px;
+    padding: 5px;
+    border: solid 1px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #000;
+  }
+}
+
+@media screen and (max-width: 522px) {
+  .tags {
+    display: none;
+  }
+}

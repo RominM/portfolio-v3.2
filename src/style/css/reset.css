@@ -35,8 +35,6 @@ body {
 html {
     overflow: auto;
     font-family: sans-serif;
-    background-color: #f4fff8;
-    color: #0b132b;
 }
 
 article,aside,details,figcaption,figure,
@@ -71,7 +69,6 @@ a {
     vertical-align:baseline;
     color: #fff;
     background:transparent;
-    outline: none;
 }
 
 /* change colours to suit your needs */

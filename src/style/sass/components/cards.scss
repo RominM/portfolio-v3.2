@@ -1,12 +1,3 @@
-@import './../../styles/sass/colors.scss';
-
-.list-repo {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 80%;
-  margin: auto;
-}
 .cards {
   position: relative;
   width: 385px;
@@ -46,7 +37,23 @@
       height: 20%;
       margin: 15px;
     }
-    .project_descript {
+    .description {
+      display: none;
+      height: 55%;
+      width: 95%;
+      margin: auto;
+      overflow: hidden;
+      &_p {
+        margin: auto;
+        width: 70%;
+        height: 60%;
+        text-align: center;
+        transition: 0.3s;
+        animation: slide 10s linear infinite;
+      }
+    }
+    /*
+    .description {
       position: absolute;
       top: 0;
       bottom: 0;
@@ -61,6 +68,7 @@
       overflow: hidden;
       animation: slide 10s linear infinite;
     }
+    */
   }
   &:hover {
     transform: scale(1.07);
@@ -83,10 +91,10 @@
     filter: blur(7px) grayscale(70%);
   }
 
-  &:hover .project_descript {
+  &:hover .description {
     display: block;
   }
-  &:focus .project_descript {
+  &:focus .description {
     display: none;
   }
 
@@ -143,7 +151,7 @@
 
 @keyframes slide {
   0% {
-    transform: translateY(75%);
+    transform: translateY(175%);
   }
 
   100% {

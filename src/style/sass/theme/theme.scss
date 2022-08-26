@@ -1,0 +1,14 @@
+.light-theme {
+  --color-primary: $light_main;
+  --color-secondary: $light_bgc;
+}
+
+.dark-theme {
+  --color-primary: $dark_main;
+  --color-secondary: $dark_bgc;
+}
+
+.dark-theme {
+  background-color: $dark_bgc;
+  color: $light_bgc;
+}

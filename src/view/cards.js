@@ -1,0 +1,79 @@
+import { handleSelect } from '../controller/getLinks.js';
+import { getData } from '../model/request.js';
+const waitingImg = 'src/assets/Image-coming-soon.jpeg';
+
+const cards = async (repositories) => {
+  const listOfRepos = await getData(repositories);
+
+  listOfRepos.forEach((repo) => {
+    // get repo with star
+    const displayCondition = repo.stargazers_count;
+    const card = document.createElement('a');
+    card.classList.add('cards');
+    card.id = repo.id;
+    card.tabIndex = '0';
+
+    getCover(card);
+    getLegend(card, repo);
+
+    // append only the repo with a star on GitHub
+    const main = document.querySelector('main');
+    displayCondition && main.append(card);
+  });
+};
+
+const getCover = (card) => {
+  const cover = document.createElement('img');
+  cover.src = waitingImg;
+  card.append(cover);
+};
+
+const getLegend = (card, repo) => {
+  const viewBtns = document.createElement('div');
+  viewBtns.classList.add('navigate-btns');
+
+  const legend = document.createElement('div');
+  legend.classList.add('legend');
+  legend.id = repo.id;
+  legend.title = 'click to view options';
+
+  legend.addEventListener('click', () => {
+    handleSelect(legend, repo, viewBtns);
+  });
+
+  // Title Card
+  const h2 = document.createElement('h2');
+  h2.innerHTML = repo.name.replaceAll('_', ' ').toUpperCase();
+  legend.append(h2);
+
+  // List of language
+  const techList = document.createElement('ul');
+  techList.classList.add('techList');
+  const languages = repo.topics;
+  languages.forEach((language) => {
+    const li = document.createElement('li');
+    li.innerHTML = language;
+    techList.append(li);
+  });
+  legend.append(techList);
+
+  // Descitpion
+  getDescription(legend, repo);
+  card.append(legend);
+};
+
+const getDescription = (legend, repo) => {
+  const descriptContainer = document.createElement('div');
+  descriptContainer.classList.add('description');
+
+  const description = document.createElement('p');
+  description.classList.add('description_p');
+  description.innerHTML = repo.description
+    ? repo.description
+    : 'No description for this project at the moment';
+
+  descriptContainer.append(description);
+  legend.append(descriptContainer);
+};
+
+export { cards };
