@@ -5,9 +5,9 @@
   margin: 50px 10px;
   border: solid $light_main 1px;
   border-radius: 10px;
-  box-shadow: 10px 10px 15px #000;
+  box-shadow: 10px 10px 15px $light_bgc3;
   transition: 0.3s;
-  color: #fff;
+  color: $light_bgc3;
   overflow: hidden;
   cursor: pointer;
   img {
@@ -23,8 +23,9 @@
     height: 33%;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    border-top: solid 1px;
-    backdrop-filter: blur(6px) grayscale(70%);
+    border-top: solid 1px $light_bgc3;
+    backdrop-filter: blur(6px) grayscale(80%);
+    background-color: $light_bgc2;
     transition: 0.3s;
     z-index: 55;
     h2 {
@@ -36,13 +37,18 @@
       position: absolute;
       bottom: 0;
       display: flex;
-      width: 100%;
+      justify-content: space-between;
+      width: 90%;
       height: 20%;
-      margin: 15px;
+      margin: 21px;
+      .logo {
+        width: 30px;
+        height: 30px;
+      }
     }
     .description {
       display: none;
-      height: 55%;
+      height: 50%;
       width: 95%;
       margin: auto;
       overflow: hidden;
@@ -58,7 +64,6 @@
   }
   &:hover {
     transform: scale(1.07);
-    border-top: transparent;
   }
   &:focus {
     transform: scale(1.07);

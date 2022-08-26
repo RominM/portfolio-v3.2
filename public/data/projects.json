@@ -75,7 +75,6 @@
     "title": "Billed",
     "descript": "Test writing with Jest on a RH Saas",
     "cover": "public/images/billed_cover.png",
-    "link": "https://rominm.github.io/Billed-app-FR/",
     "tags": [
       "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg",
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
