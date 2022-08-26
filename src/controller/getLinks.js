@@ -1,13 +1,23 @@
 import { btnRepo, btnWebsite } from '../view/buttons.js';
 
 const handleSelect = (legend, repo, viewBtns) => {
-  const repoLink = repo.html_url;
-  const websiteBtn = '';
+  const all_legends = document.querySelectorAll('.legend');
+  all_legends.forEach((legend) => {
+    removeChild(legend);
+  });
 
-  repoLink && btnRepo(repo, viewBtns);
+  repo.html_url && btnRepo(repo, viewBtns);
+  const websiteBtn = '';
   websiteBtn && btnWebsite(viewBtns);
 
   legend.append(viewBtns);
 };
 
-export { handleSelect };
+const removeChild = (legend) => {
+  const navigateBtn = document.querySelector('.navigate-btns');
+  const links = document.querySelector('.links');
+
+  legend.contains(navigateBtn) && navigateBtn.remove() & links.remove();
+};
+
+export { handleSelect, removeChild };

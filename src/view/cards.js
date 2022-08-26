@@ -1,11 +1,11 @@
-import { handleSelect } from '../controller/getLinks.js';
+import { handleSelect, removeChild } from '../controller/getLinks.js';
 import { getData } from '../model/request.js';
 const waitingImg = 'src/assets/Image-coming-soon.jpeg';
 
 const cards = async (repositories) => {
   const listOfRepos = await getData(repositories);
 
-  listOfRepos.forEach((repo) => {
+  listOfRepos.forEach((repo, i) => {
     // get repo with star
     const displayCondition = repo.stargazers_count;
     const card = document.createElement('a');
@@ -40,7 +40,9 @@ const getLegend = (card, repo) => {
   legend.addEventListener('click', () => {
     handleSelect(legend, repo, viewBtns);
   });
-
+  legend.addEventListener('blur', () => {
+    removeChild();
+  });
   // Title Card
   const h2 = document.createElement('h2');
   h2.innerHTML = repo.name.replaceAll('_', ' ').toUpperCase();

@@ -188,26 +188,12 @@ header .picture a img {
   bottom: 0;
   width: 100%;
   height: 33%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   border-top: solid 1px;
+  backdrop-filter: blur(6px) grayscale(70%);
   transition: 0.3s;
   z-index: 55;
-  /*
-  .description {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: none;
-    margin: auto;
-    width: 70%;
-    height: 60%;
-    text-align: center;
-    transition: 0.3s;
-    overflow: hidden;
-    animation: slide 10s linear infinite;
-  }
-  */
 }
 .cards .legend h2 {
   margin: 15px;
@@ -239,6 +225,7 @@ header .picture a img {
 }
 .cards:hover {
   transform: scale(1.07);
+  border-top: transparent;
 }
 .cards:focus {
   transform: scale(1.07);
@@ -251,11 +238,8 @@ header .picture a img {
   border-top: none;
   height: 100%;
 }
-.cards:hover img {
-  filter: blur(7px) grayscale(70%);
-}
-.cards:focus img {
-  filter: blur(7px) grayscale(70%);
+.cards:focus .links {
+  display: block;
 }
 .cards:hover .description {
   display: block;
@@ -280,19 +264,15 @@ header .picture a img {
 .cards:hover .legend > h2 {
   margin: auto;
   padding: 15px;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(180deg, rgb(0, 0, 0) 22%, rgba(0, 0, 0, 0.6278886555) 80%, rgba(0, 0, 0, 0) 100%);
 }
 .cards:focus .legend > h2 {
   margin: auto;
   padding: 15px;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(180deg, rgb(0, 0, 0) 22%, rgba(0, 0, 0, 0.6278886555) 80%, rgba(0, 0, 0, 0) 100%);
 }
 
 @keyframes slide {
   0% {
-    transform: translateY(175%);
+    transform: translateY(165%);
   }
   100% {
     transform: translateY(-75%);
