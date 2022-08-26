@@ -2,10 +2,12 @@ import { handleSelect, removeChild } from '../controller/getLinks.js';
 import { getData } from '../model/request.js';
 const waitingImg = 'src/assets/Image-coming-soon.jpeg';
 
-const cards = async (repositories) => {
+const cards = async (repositories, newData) => {
   const listOfRepos = await getData(repositories);
+  console.log(listOfRepos);
+  console.log(newData);
 
-  listOfRepos.forEach((repo, i) => {
+  listOfRepos.forEach((repo) => {
     // get repo with star
     const displayCondition = repo.stargazers_count;
     const card = document.createElement('a');
@@ -13,7 +15,7 @@ const cards = async (repositories) => {
     card.id = repo.id;
     card.tabIndex = '0';
 
-    getCover(card);
+    getCover(card, repo, newData);
     getLegend(card, repo);
 
     // append only the repo with a star on GitHub
@@ -22,10 +24,15 @@ const cards = async (repositories) => {
   });
 };
 
-const getCover = (card) => {
+const getCover = (card, repo, newData) => {
   const cover = document.createElement('img');
-  cover.src = waitingImg;
-  card.append(cover);
+  newData.forEach((newD) => {
+    if (repo.id === newD.id) {
+      cover.src = newD.cover;
+    }
+
+    card.append(cover);
+  });
 };
 
 const getLegend = (card, repo) => {
