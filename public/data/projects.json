@@ -142,7 +142,7 @@
     "id": "",
     "title": "HRnet",
     "descript": "Refont a JQuery app in full React app then create a npm package",
-    "cover": "./public/images/hrnet_cover.png",
+    "cover": "public/images/hrnet_cover.PNG",
     "link": "https://hrrnet-rm.netlify.app/",
     "tags": [
       "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg",
@@ -159,7 +159,7 @@
     "id": "",
     "title": "Space Tourisme",
     "descript": "Challenge from frontendmentor.io for a starship tourisme",
-    "cover": "./public/images/spacetourisme_cover.png",
+    "cover": "public/images/spacetourisme_cover.PNG",
     "link": "https://space-tourisme-rm.netlify.app/",
     "tags": [
       "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg",
