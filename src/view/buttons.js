@@ -6,11 +6,11 @@ const btnRepo = (repo, viewBtns) => {
   viewBtns.append(repoBtn);
 };
 
-const btnWebsite = (viewBtns) => {
+const btnWebsite = (link, viewBtns) => {
   const websiteBtn = document.createElement('a');
   websiteBtn.classList.add('website-btn', 'links');
   websiteBtn.innerHTML = 'visit website';
-  websiteBtn.href = '';
+  websiteBtn.href = link;
   viewBtns.append(websiteBtn);
 };
 

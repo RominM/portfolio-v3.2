@@ -18,7 +18,7 @@ header .description:first-child {
   margin-top: 40px;
 }
 header .description:first-child h1 {
-  display: inline;
+  display: block;
   font-size: clamp(3em, 2.5rem, 2em);
   color: #022e51;
 }
@@ -96,8 +96,14 @@ header .picture a img {
   background-color: #022e51;
   padding: 7px 35px;
   border-radius: 10px;
-  box-shadow: 2px 2px 10px #596d82;
+  box-shadow: 2px 2px 10px rgb(192, 108, 132);
   margin-left: 50px;
+  transition: 0.5s;
+}
+.contact:hover {
+  background: linear-gradient(to left, rgb(192, 108, 132) 55%, #022e51 50%) right;
+  background-size: 200% 100%;
+  box-shadow: 2px 2px 10px #022e51;
 }
 
 .navigate-btns {
@@ -120,7 +126,7 @@ header .picture a img {
   padding: 7px 35px;
   border-radius: 10px;
   background-color: #022e51;
-  box-shadow: 2px 2px 10px #596d82;
+  box-shadow: 2px 2px 10px rgb(108, 91, 123);
   animation: popBtn 0.1s;
   transition: cubic-bezier(0, 0.7, 0.72, 1.57);
 }
@@ -129,8 +135,8 @@ header .picture a img {
   padding: 5px 25px;
   border: solid #022e51;
   border-radius: 10px;
-  color: #596d82;
-  box-shadow: 2px 2px 10px #596d82;
+  color: rgb(192, 108, 132);
+  box-shadow: 2px 2px 10px rgb(108, 91, 123);
   animation: popBtn 0.1s;
   transition: cubic-bezier(0, 0.7, 0.72, 1.57);
 }
@@ -150,6 +156,11 @@ header .picture a img {
 @media screen and (max-width: 522px) {
   .contact {
     margin-left: 0;
+  }
+  .navigate-btns {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
   }
 }
 .tags {
@@ -174,18 +185,20 @@ header .picture a img {
   width: 385px;
   height: 250px;
   margin: 50px 10px;
-  border: solid #022e51 1px;
+  border: solid #022e51 5px;
   border-radius: 10px;
-  box-shadow: 10px 10px 15px #596d82;
+  box-shadow: 10px 10px 20px 5px rgb(108, 91, 123);
   transition: 0.3s;
-  color: #596d82;
+  color: #000;
   overflow: hidden;
   cursor: pointer;
 }
-.cards img {
+.cards .cover {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transform: scale(2.5);
+  animation: shine 20s linear forwards;
   transition: 0.3s;
 }
 .cards .legend {
@@ -195,8 +208,8 @@ header .picture a img {
   height: 33%;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  border-top: solid 1px #596d82;
-  backdrop-filter: blur(6px) grayscale(80%);
+  border-top: solid 1px rgb(108, 91, 123);
+  backdrop-filter: blur(8px) grayscale(65%);
   background-color: rgba(176, 191, 207, 0.1333333333);
   transition: 0.3s;
   z-index: 55;
@@ -205,17 +218,19 @@ header .picture a img {
   margin: 15px;
   width: 100%;
   height: 5%;
+  letter-spacing: 7px;
+  word-spacing: 4px;
 }
 .cards .legend .techList {
   position: absolute;
   bottom: 0;
   display: flex;
   justify-content: space-between;
-  width: 90%;
+  width: 85%;
   height: 20%;
   margin: 21px;
 }
-.cards .legend .techList .logo {
+.cards .legend .techList .logo img {
   width: 30px;
   height: 30px;
 }
@@ -224,6 +239,7 @@ header .picture a img {
   height: 50%;
   width: 95%;
   margin: auto;
+  font-size: 1.2rem;
   overflow: hidden;
 }
 .cards .legend .description_p {
@@ -235,13 +251,17 @@ header .picture a img {
   animation: slide 10s linear infinite;
 }
 .cards:hover {
-  transform: scale(1.07);
+  transform: scale(1.1);
 }
 .cards:focus {
-  transform: scale(1.07);
+  transform: scale(1.1);
+}
+.cards:hover .cover {
+  animation-play-state: paused;
 }
 .cards:hover .legend {
-  border-top: none;
+  border-top: transparent;
+  border-radius: 5px;
   height: 100%;
 }
 .cards:focus .legend {
@@ -260,16 +280,10 @@ header .picture a img {
 .cards:hover .legend > .languageList {
   margin: auto;
   padding: 15px;
-  background: rgb(0, 0, 0);
-  background: rgb(0, 0, 0);
-  background: linear-gradient(0deg, rgb(0, 0, 0) 22%, rgba(0, 0, 0, 0.6278886555) 80%, rgba(0, 0, 0, 0) 100%);
 }
 .cards:focus .legend > .languageList {
   margin: auto;
   padding: 15px;
-  background: rgb(0, 0, 0);
-  background: rgb(0, 0, 0);
-  background: linear-gradient(0deg, rgb(0, 0, 0) 22%, rgba(0, 0, 0, 0.6278886555) 80%, rgba(0, 0, 0, 0) 100%);
 }
 .cards:hover .legend > h2 {
   margin: auto;
@@ -280,12 +294,31 @@ header .picture a img {
   padding: 15px;
 }
 
+@media screen and (max-width: 522px) {
+  .cards:focus .description {
+    display: block;
+  }
+  .cards .legend:focus > .description {
+    display: none;
+  }
+}
 @keyframes slide {
+  from {
+    transform: translateY(150%);
+  }
+  to {
+    transform: translateY(-150%);
+  }
+}
+@keyframes shine {
   0% {
-    transform: translateY(165%);
+    transform: translateX(-50px) translateY(20px) scale(1.3);
+  }
+  50% {
+    transform: translateX(15px) translateY(-20px) scale(1.1);
   }
   100% {
-    transform: translateY(-75%);
+    transform: translateX(0px) translateY(0px) scale(1);
   }
 }
 .light-theme {
@@ -300,7 +333,7 @@ header .picture a img {
 
 .dark-theme {
   background-color: #0b132b;
-  color: #a3b4c8;
+  color: rgb(53, 92, 125);
 }
 
 main {
@@ -312,26 +345,9 @@ main {
 }
 
 html {
-  background-color: #a3b4c8;
+  background: rgb(192, 108, 132);
+  background: linear-gradient(180deg, rgb(53, 92, 125) 0%, rgb(108, 91, 123) 50%, rgb(192, 108, 132) 100%);
   color: #0b132b;
 }
-
-/*
-.description {
-      height: 55%;
-      width: 95%;
-      margin: auto;
-      overflow: hidden;
-      &-p {
-        display: none;
-        margin: auto;
-        width: 70%;
-        height: 60%;
-        text-align: center;
-        transition: 0.3s;
-        animation: slide 10s linear infinite;
-      }
-    }
-*/
 
 /*# sourceMappingURL=style.css.map */

@@ -5,13 +5,15 @@ const handleSelect = (legend, repo, viewBtns, newData) => {
   all_legends.forEach((legend) => {
     removeChild(legend);
   });
-  let websiteBtn;
-  newData.forEach((newD) => {
-    repo.id === newD.id && (websiteBtn = newD.link);
-  });
 
   repo.html_url && btnRepo(repo, viewBtns);
-  websiteBtn && btnWebsite(viewBtns);
+
+  newData.forEach((newD) => {
+    if (repo.id === newD.id) {
+      const link = newD.link;
+      link && btnWebsite(link, viewBtns);
+    }
+  });
 
   legend.append(viewBtns);
 };

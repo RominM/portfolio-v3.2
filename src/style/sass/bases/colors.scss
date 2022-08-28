@@ -1,7 +1,15 @@
 $light_main: #022e51;
-$light_bgc: #a3b4c8;
+$light_bgc: rgba(53, 92, 125, 1);
 $light_bgc2: #b0bfcf22;
-$light_bgc3: #596d82;
+$light_bgc3: rgba(108, 91, 123, 1);
+$light_bgc4: rgba(192, 108, 132, 1);
+$light_bgc_linear: linear-gradient(
+  180deg,
+  $light_bgc 0%,
+  $light_bgc3 50%,
+  $light_bgc4 100%
+);
+
 $dark_main: #d400ff;
 $dark_bgc: #0b132b;
 

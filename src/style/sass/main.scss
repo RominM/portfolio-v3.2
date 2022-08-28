@@ -9,24 +9,7 @@
 @import 'layout/main.scss';
 
 html {
-  background-color: $light_bgc;
+  background: $light_bgc4;
+  background: $light_bgc_linear;
   color: $dark_bgc;
 }
-
-/*
-.description {
-      height: 55%;
-      width: 95%;
-      margin: auto;
-      overflow: hidden;
-      &-p {
-        display: none;
-        margin: auto;
-        width: 70%;
-        height: 60%;
-        text-align: center;
-        transition: 0.3s;
-        animation: slide 10s linear infinite;
-      }
-    }
-*/

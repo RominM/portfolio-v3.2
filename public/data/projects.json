@@ -4,7 +4,7 @@
     "title": "Reservia",
     "descript": "Approche on basic language HTML & CSS. Make a single page model real",
     "cover": "public/images/revervia_cover.png",
-    "link": "https://rominm.github.io/RominManogil_2_08022021/",
+    "link": "https://rominm.github.io/Reservia/",
     "tags": [
       "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg",
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
@@ -21,7 +21,6 @@
       "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg",
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
       "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
-      "https://www.vectorlogo.zone/logos/npmjs/npmjs-ar21.svg",
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"
     ]
   },
@@ -30,14 +29,14 @@
     "title": "GameOn",
     "descript": "Handle a validation of formular with Javascript, required fields then generate an error message",
     "cover": "public/images/gameOn_cover.png",
-    "link": "https://rominm.github.io/RominManogil_04_18032021/",
+    "link": "https://rominm.github.io/GameOn/",
     "tags": [
       "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg",
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
-      "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
-      "https://www.vectorlogo.zone/logos/npmjs/npmjs-ar21.svg",
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
-      "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+      "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+      "https://www.vectorlogo.zone/logos/npmjs/npmjs-ar21.svg"
     ]
   },
   {
@@ -45,14 +44,14 @@
     "title": "FishEye",
     "descript": "Multi-task in Vanilla Javascript project dynamicly with nativ loop and accessiblity",
     "cover": "public/images/fisheys_cover.PNG",
-    "link": "https://rominm.github.io/RominManogil_06_07062021/",
+    "link": "https://rominm.github.io/FishEye/",
     "tags": [
       "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg",
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
-      "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
-      "https://www.vectorlogo.zone/logos/npmjs/npmjs-ar21.svg",
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
-      "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+      "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+      "https://www.vectorlogo.zone/logos/npmjs/npmjs-ar21.svg"
     ]
   },
   {
@@ -60,14 +59,14 @@
     "title": "Les petits plats",
     "descript": "Creating a searching algorythme among different recipes",
     "cover": "public/images/les-petits-plats_cover.PNG",
-    "link": "https://rominm.github.io/RominManogil_07_13092021/",
+    "link": "https://rominm.github.io/Les_petits_plats/",
     "tags": [
       "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg",
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
-      "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
-      "https://www.vectorlogo.zone/logos/npmjs/npmjs-ar21.svg",
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
-      "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+      "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+      "https://www.vectorlogo.zone/logos/npmjs/npmjs-ar21.svg"
     ]
   },
   {
@@ -76,19 +75,16 @@
     "descript": "Test writing with Jest on a RH Saas",
     "cover": "public/images/billed_cover.png",
     "tags": [
-      "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg",
-      "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
-      "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
-      "https://www.vectorlogo.zone/logos/npmjs/npmjs-ar21.svg",
-      "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
+      "https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg",
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
-      "https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg"
+      "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+      "https://www.vectorlogo.zone/logos/npmjs/npmjs-ar21.svg"
     ]
   },
 
   {
     "id": "",
-    "title": "LearnatHome",
+    "title": "LearnAtHome",
     "descript": "Model creation and all process of developpement with agil method and kanban",
     "cover": "public/images/learn-at-home_cover.PNG",
     "link": "https://www.figma.com/file/aC1xZLdxynh24yQ9evfnx3/Learn%40Home?node-id=0%3A1",
@@ -100,15 +96,15 @@
     "title": "Kasa",
     "descript": "Simple React application with navigation by React-router",
     "cover": "public/images/kasa_cover.PNG",
-    "link": "https://rominmanogil-p11-kasa.netlify.app/",
+    "link": "https://kasa-rm.netlify.app/",
     "tags": [
       "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg",
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
-      "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
-      "https://www.vectorlogo.zone/logos/npmjs/npmjs-ar21.svg",
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
-      "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
+      "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+      "https://www.vectorlogo.zone/logos/npmjs/npmjs-ar21.svg"
     ]
   },
   {
@@ -116,15 +112,15 @@
     "title": "SportSee",
     "descript": "Using React then reachart from api data",
     "cover": "public/images/sportSee_cover.PNG",
-    "link": "https://sportsee-mgl-p12.netlify.app/",
+    "link": "https://sportsee-rm.netlify.app/user/12",
     "tags": [
       "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg",
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
-      "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
-      "https://www.vectorlogo.zone/logos/npmjs/npmjs-ar21.svg",
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
-      "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
+      "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+      "https://www.vectorlogo.zone/logos/npmjs/npmjs-ar21.svg"
     ]
   },
   {
@@ -134,14 +130,12 @@
     "cover": "/public/images/argent-bank_cover.PNG",
     "link": "",
     "tags": [
-      "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg",
-      "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
-      "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
-      "https://www.vectorlogo.zone/logos/npmjs/npmjs-ar21.svg",
-      "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
-      "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg"
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
+      "https://www.vectorlogo.zone/logos/axios/axios-icon.svg",
+      "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+      "https://www.vectorlogo.zone/logos/npmjs/npmjs-ar21.svg"
     ]
   },
   {
@@ -153,12 +147,12 @@
     "tags": [
       "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg",
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
-      "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
-      "https://www.vectorlogo.zone/logos/npmjs/npmjs-ar21.svg",
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
-      "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg"
+      "public/images/storybook.svg",
+      "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+      "https://www.vectorlogo.zone/logos/npmjs/npmjs-ar21.svg"
     ]
   },
   {
@@ -170,11 +164,11 @@
     "tags": [
       "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg",
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
-      "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
-      "https://www.vectorlogo.zone/logos/npmjs/npmjs-ar21.svg",
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
-      "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
+      "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+      "https://www.vectorlogo.zone/logos/npmjs/npmjs-ar21.svg"
     ]
   }
 ]

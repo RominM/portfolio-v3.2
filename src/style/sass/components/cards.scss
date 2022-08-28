@@ -3,17 +3,19 @@
   width: 385px;
   height: 250px;
   margin: 50px 10px;
-  border: solid $light_main 1px;
+  border: solid $light_main 5px;
   border-radius: 10px;
-  box-shadow: 10px 10px 15px $light_bgc3;
+  box-shadow: 10px 10px 20px 5px $light_bgc3;
   transition: 0.3s;
-  color: $light_bgc3;
+  color: #000;
   overflow: hidden;
   cursor: pointer;
-  img {
+  .cover {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transform: scale(2.5);
+    animation: shine 20s linear forwards;
     transition: 0.3s;
   }
   .legend {
@@ -24,7 +26,7 @@
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     border-top: solid 1px $light_bgc3;
-    backdrop-filter: blur(6px) grayscale(80%);
+    backdrop-filter: blur(8px) grayscale(65%);
     background-color: $light_bgc2;
     transition: 0.3s;
     z-index: 55;
@@ -32,16 +34,18 @@
       margin: 15px;
       width: 100%;
       height: 5%;
+      letter-spacing: 7px;
+      word-spacing: 4px;
     }
     .techList {
       position: absolute;
       bottom: 0;
       display: flex;
       justify-content: space-between;
-      width: 90%;
+      width: 85%;
       height: 20%;
       margin: 21px;
-      .logo {
+      .logo img {
         width: 30px;
         height: 30px;
       }
@@ -51,6 +55,7 @@
       height: 50%;
       width: 95%;
       margin: auto;
+      font-size: 1.2rem;
       overflow: hidden;
       &_p {
         margin: auto;
@@ -63,13 +68,17 @@
     }
   }
   &:hover {
-    transform: scale(1.07);
+    transform: scale(1.1);
   }
   &:focus {
-    transform: scale(1.07);
+    transform: scale(1.1);
+  }
+  &:hover .cover {
+    animation-play-state: paused;
   }
   &:hover .legend {
-    border-top: none;
+    border-top: transparent;
+    border-radius: 5px;
     height: 100%;
   }
   &:focus .legend {
@@ -89,26 +98,10 @@
   &:hover .legend > .languageList {
     margin: auto;
     padding: 15px;
-    background: rgb(0, 0, 0);
-    background: rgb(0, 0, 0);
-    background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 1) 22%,
-      rgba(0, 0, 0, 0.6278886554621849) 80%,
-      rgba(0, 0, 0, 0) 100%
-    );
   }
   &:focus .legend > .languageList {
     margin: auto;
     padding: 15px;
-    background: rgb(0, 0, 0);
-    background: rgb(0, 0, 0);
-    background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 1) 22%,
-      rgba(0, 0, 0, 0.6278886554621849) 80%,
-      rgba(0, 0, 0, 0) 100%
-    );
   }
 
   &:hover .legend > h2 {
@@ -121,12 +114,39 @@
   }
 }
 
+@media screen and (max-width: 522px) {
+  .cards {
+    &:focus .description {
+      display: block;
+    }
+    .legend {
+      &:focus > .description {
+        display: none;
+      }
+    }
+  }
+}
+
 @keyframes slide {
+  from {
+    transform: translateY(150%);
+  }
+
+  to {
+    transform: translateY(-150%);
+  }
+}
+
+@keyframes shine {
   0% {
-    transform: translateY(165%);
+    transform: translateX(-50px) translateY(20px) scale(1.3);
+  }
+
+  50% {
+    transform: translateX(15px) translateY(-20px) scale(1.1);
   }
 
   100% {
-    transform: translateY(-75%);
+    transform: translateX(0px) translateY(0px) scale(1);
   }
 }

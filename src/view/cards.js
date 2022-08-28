@@ -1,5 +1,6 @@
 import { handleSelect, removeChild } from '../controller/getLinks.js';
 import { getData } from '../model/request.js';
+const commingSoonPic = './../assets/Image-coming-soon.jpeg';
 
 const cards = async (repositories, newData) => {
   const listOfRepos = await getData(repositories);
@@ -23,6 +24,7 @@ const cards = async (repositories, newData) => {
 
 const getCover = (card, repo, newData) => {
   const cover = document.createElement('img');
+  cover.classList.add('cover');
   newData.forEach((newD) => {
     repo.id === newD.id && (cover.src = newD.cover);
   });
