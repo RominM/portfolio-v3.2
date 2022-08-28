@@ -47,8 +47,11 @@ header .picture a img {
     text-align: center;
     margin-right: 18px;
   }
-  header .description h1 {
-    margin-top: 40px;
+  header .description:first-child {
+    margin-top: 95px;
+  }
+  header .description:first-child h1 {
+    display: inline;
   }
   header .picture a {
     height: 0;
