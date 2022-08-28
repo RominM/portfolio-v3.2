@@ -127,7 +127,7 @@
     "id": "",
     "title": "ArgentBank",
     "descript": "Handle a security authantication to bank account by Redux and writing the swagger",
-    "cover": "/public/images/argent-bank_cover.PNG",
+    "cover": "public/images/argentbank_cover.PNG",
     "link": "",
     "tags": [
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
@@ -160,7 +160,7 @@
     "title": "Space Tourisme",
     "descript": "Challenge from frontendmentor.io for a starship tourisme",
     "cover": "public/images/space-tourisme_cover.png",
-    "link": "https://space-tourisme-rm.netlify.app/",
+    "link": "https://spacetourisme-rm.netlify.app/",
     "tags": [
       "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg",
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
