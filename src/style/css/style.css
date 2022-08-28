@@ -162,6 +162,9 @@ header .picture a img {
     flex-direction: column;
     height: 120px;
   }
+  .navigate-btns .website-btn {
+    background-color: #fff;
+  }
 }
 .tags {
   display: flex;
@@ -250,6 +253,9 @@ header .picture a img {
   transition: 0.3s;
   animation: slide 10s linear infinite;
 }
+.cards .legend .info-resp {
+  display: none;
+}
 .cards:hover {
   transform: scale(1.1);
 }
@@ -300,6 +306,16 @@ header .picture a img {
   }
   .cards .legend:focus > .description {
     display: none;
+  }
+  .cards:focus .info-resp {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    font-size: 0.7rem;
+    font-style: italic;
+    text-decoration: overline;
+    transform: translate(-50%, -100%);
   }
 }
 @keyframes slide {

@@ -66,6 +66,9 @@
         animation: slide 10s linear infinite;
       }
     }
+    .info-resp {
+      display: none;
+    }
   }
   &:hover {
     transform: scale(1.1);
@@ -123,6 +126,16 @@
       &:focus > .description {
         display: none;
       }
+    }
+    &:focus .info-resp {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      display: block;
+      font-size: 0.7rem;
+      font-style: italic;
+      text-decoration: overline;
+      transform: translate(-50%, -100%);
     }
   }
 }

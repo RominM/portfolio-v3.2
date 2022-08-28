@@ -15,7 +15,6 @@ const cards = async (repositories, newData) => {
 
     getCover(card, repo, newData);
     getLegend(card, repo, newData);
-
     // append only the repo with a star on GitHub
     const main = document.querySelector('main');
     displayCondition && main.append(card);
@@ -68,6 +67,7 @@ const getLegend = (card, repo, newData) => {
       });
     }
   });
+  responsiveNav(legend);
   legend.append(techList);
 
   // Descitpion
@@ -87,6 +87,14 @@ const getDescription = (legend, repo) => {
 
   descriptContainer.append(description);
   legend.append(descriptContainer);
+};
+
+const responsiveNav = (legend) => {
+  const infoResp = document.createElement('p');
+  infoResp.classList.add('info-resp');
+  infoResp.innerHTML = 'Click to view options';
+
+  legend.append(infoResp);
 };
 
 export { cards };
