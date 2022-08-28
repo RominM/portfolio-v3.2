@@ -1,6 +1,9 @@
+@font-face {
+  font-family: Josefin;
+  src: url("./../../../../public/fonts/Josefin_Sans/static/JosefinSans-ExtraLight.ttf");
+}
 /*
-#cc6d3d
-#b74803
+#68CEF7
 */
 header {
   position: relative;
@@ -8,6 +11,7 @@ header {
   justify-content: space-around;
   flex-wrap: wrap;
   width: 85%;
+  color: #bdb326;
   margin: 25px auto;
 }
 header .description {
@@ -20,7 +24,7 @@ header .description:first-child {
 header .description:first-child h1 {
   display: block;
   font-size: clamp(3em, 2.5rem, 2em);
-  color: #022e51;
+  color: #b3245c;
 }
 header .description p {
   margin: 25px 0 45px;
@@ -32,7 +36,7 @@ header .picture a {
   margin: auto;
 }
 header .picture a img {
-  border: solid 2px #022e51;
+  border: solid 2px #bdb326;
   border-radius: 50%;
   box-shadow: 3px 3px 10px #000;
 }
@@ -99,17 +103,17 @@ header .picture a img {
 }
 
 .contact {
-  background-color: #022e51;
+  background-color: #1f2100;
   padding: 7px 35px;
   border-radius: 10px;
-  box-shadow: 2px 2px 10px rgb(192, 108, 132);
+  box-shadow: 2px 2px 10px #000;
   margin-left: 50px;
   transition: 0.5s;
 }
 .contact:hover {
-  background: linear-gradient(to left, rgb(192, 108, 132) 55%, #022e51 50%) right;
+  background: linear-gradient(to left, #b3245c 55%, #1f2100 50%) right;
   background-size: 200% 100%;
-  box-shadow: 2px 2px 10px #022e51;
+  box-shadow: 2px 2px 10px #1f2100;
 }
 
 .navigate-btns {
@@ -131,18 +135,18 @@ header .picture a img {
   display: block;
   padding: 7px 35px;
   border-radius: 10px;
-  background-color: #022e51;
-  box-shadow: 2px 2px 10px rgb(108, 91, 123);
+  background-color: #1f2100;
+  box-shadow: 2px 2px 10px #297ea6;
   animation: popBtn 0.1s;
   transition: cubic-bezier(0, 0.7, 0.72, 1.57);
 }
 .navigate-btns .website-btn {
   display: block;
   padding: 5px 25px;
-  border: solid #022e51;
+  border: solid #1f2100;
   border-radius: 10px;
-  color: rgb(192, 108, 132);
-  box-shadow: 2px 2px 10px rgb(108, 91, 123);
+  color: #b3245c;
+  box-shadow: 2px 2px 10px #297ea6;
   animation: popBtn 0.1s;
   transition: cubic-bezier(0, 0.7, 0.72, 1.57);
 }
@@ -194,9 +198,9 @@ header .picture a img {
   width: 385px;
   height: 250px;
   margin: 50px 10px;
-  border: solid #022e51 5px;
+  border: solid #1f2100 5px;
   border-radius: 10px;
-  box-shadow: 10px 10px 20px 5px rgb(108, 91, 123);
+  box-shadow: 3px 3px 10px #000;
   transition: 0.3s;
   color: #000;
   overflow: hidden;
@@ -217,9 +221,8 @@ header .picture a img {
   height: 33%;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  border-top: solid 1px rgb(108, 91, 123);
+  border-top: solid 1px #1f2100;
   backdrop-filter: blur(8px) grayscale(65%);
-  background-color: rgba(176, 191, 207, 0.1333333333);
   transition: 0.3s;
   z-index: 55;
 }
@@ -355,21 +358,74 @@ header .picture a img {
 
 .dark-theme {
   background-color: #0b132b;
-  color: rgb(53, 92, 125);
+  color: #ffffff;
 }
 
 main {
+  position: fixed;
+  top: 35%;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 80%;
   margin: auto;
+  overflow: scroll;
+  overflow-x: hidden;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+}
+
+main::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
 }
 
 html {
-  background: rgb(192, 108, 132);
-  background: linear-gradient(180deg, rgb(53, 92, 125) 0%, rgb(108, 91, 123) 50%, rgb(192, 108, 132) 100%);
-  color: #0b132b;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-family: Josefin;
+  animation: changeBg 12s infinite;
+}
+
+@keyframes changeBg {
+  0% {
+    background-image: url("./../../assets/low-poly-grid-haikei_0.svg");
+  }
+  10% {
+    background-image: url("./../../assets/low-poly-grid-haikei_1.svg");
+  }
+  10% {
+    background-image: url("./../../assets/low-poly-grid-haikei_2.svg");
+  }
+  30% {
+    background-image: url("./../../assets/low-poly-grid-haikei_3.svg");
+  }
+  40% {
+    background-image: url("./../../assets/low-poly-grid-haikei_4.svg");
+  }
+  50% {
+    background-image: url("./../../assets/low-poly-grid-haikei_5.svg");
+  }
+  60% {
+    background-image: url("./../../assets/low-poly-grid-haikei_6.svg");
+  }
+  70% {
+    background-image: url("./../../assets/low-poly-grid-haikei_7.svg");
+  }
+  80% {
+    background-image: url("./../../assets/low-poly-grid-haikei_8.svg");
+  }
+  90% {
+    background-image: url("./../../assets/low-poly-grid-haikei_9.svg");
+  }
+  100% {
+    background-image: url("./../../assets/low-poly-grid-haikei_10.svg");
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

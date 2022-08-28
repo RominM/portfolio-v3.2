@@ -1,7 +1,20 @@
 main {
+  position: fixed;
+  top: 35%;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 80%;
   margin: auto;
+  overflow: scroll;
+  overflow-x: hidden;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+}
+
+main::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
 }

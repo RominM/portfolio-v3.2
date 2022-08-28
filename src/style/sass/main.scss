@@ -9,7 +9,47 @@
 @import 'layout/main.scss';
 
 html {
-  background: $light_bgc4;
-  background: $light_bgc_linear;
-  color: $dark_bgc;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-family: $main_font;
+  animation: changeBg 12s infinite;
+}
+
+@keyframes changeBg {
+  0% {
+    background-image: url('./../../assets/low-poly-grid-haikei_0.svg');
+  }
+  10% {
+    background-image: url('./../../assets/low-poly-grid-haikei_1.svg');
+  }
+  10% {
+    background-image: url('./../../assets/low-poly-grid-haikei_2.svg');
+  }
+  30% {
+    background-image: url('./../../assets/low-poly-grid-haikei_3.svg');
+  }
+  40% {
+    background-image: url('./../../assets/low-poly-grid-haikei_4.svg');
+  }
+  50% {
+    background-image: url('./../../assets/low-poly-grid-haikei_5.svg');
+  }
+  60% {
+    background-image: url('./../../assets/low-poly-grid-haikei_6.svg');
+  }
+  70% {
+    background-image: url('./../../assets/low-poly-grid-haikei_7.svg');
+  }
+  80% {
+    background-image: url('./../../assets/low-poly-grid-haikei_8.svg');
+  }
+  90% {
+    background-image: url('./../../assets/low-poly-grid-haikei_9.svg');
+  }
+  100% {
+    background-image: url('./../../assets/low-poly-grid-haikei_10.svg');
+  }
 }

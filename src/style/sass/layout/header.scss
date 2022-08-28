@@ -4,6 +4,7 @@ header {
   justify-content: space-around;
   flex-wrap: wrap;
   width: 85%;
+  color: $light_typo1;
   margin: 25px auto;
   .description {
     max-width: 50%;
@@ -13,8 +14,7 @@ header {
       h1 {
         display: block;
         font-size: clamp(3em, 2.5rem, 2em);
-        color: $light_main;
-        // transform: skew(200deg, 340deg);
+        color: $light_typo2;
       }
     }
     p {
@@ -28,7 +28,7 @@ header {
       height: 205px;
       margin: auto;
       img {
-        border: solid 2px $light_main;
+        border: solid 2px $light_typo1;
         border-radius: 50%;
         box-shadow: 3px 3px 10px #000;
       }

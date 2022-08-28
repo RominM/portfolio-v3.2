@@ -5,7 +5,7 @@
   margin: 50px 10px;
   border: solid $light_main 5px;
   border-radius: 10px;
-  box-shadow: 10px 10px 20px 5px $light_bgc3;
+  box-shadow: 3px 3px 10px #000;
   transition: 0.3s;
   color: #000;
   overflow: hidden;
@@ -25,9 +25,8 @@
     height: 33%;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    border-top: solid 1px $light_bgc3;
+    border-top: solid 1px $light_main;
     backdrop-filter: blur(8px) grayscale(65%);
-    background-color: $light_bgc2;
     transition: 0.3s;
     z-index: 55;
     h2 {

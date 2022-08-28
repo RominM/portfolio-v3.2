@@ -1,19 +1,18 @@
-$light_main: #022e51;
-$light_bgc: rgba(53, 92, 125, 1);
-$light_bgc2: #b0bfcf22;
-$light_bgc3: rgba(108, 91, 123, 1);
-$light_bgc4: rgba(192, 108, 132, 1);
+$light_main: #1f2100;
+$light_main2: #297ea6;
+
+$light_bgc: #ffffff;
+$light_typo1: #bdb326;
+$light_typo2: #b3245c;
+$light_blur1: #1f210018;
 $light_bgc_linear: linear-gradient(
   180deg,
   $light_bgc 0%,
-  $light_bgc3 50%,
-  $light_bgc4 100%
+  $light_typo2 100% $light_main2 50%
 );
 
-$dark_main: #d400ff;
 $dark_bgc: #0b132b;
 
 /*
-#cc6d3d
-#b74803
+#68CEF7
 */
