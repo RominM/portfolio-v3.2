@@ -1,6 +1,24 @@
 @font-face {
-  font-family: Josefin;
+  font-family: JosefinXS;
   src: url('./../../../../public/fonts/Josefin_Sans/static/JosefinSans-ExtraLight.ttf');
 }
 
-$main_font: Josefin;
+@font-face {
+  font-family: JosefinS;
+  src: url('./../../../../public/fonts/Josefin_Sans/static/JosefinSans-Light.ttf');
+}
+
+@font-face {
+  font-family: JosefinM;
+  src: url('./../../../../public/fonts/Josefin_Sans/static/JosefinSans-Medium.ttf');
+}
+
+@font-face {
+  font-family: JosefinXL;
+  src: url('./../../../../public/fonts/Josefin_Sans/static/JosefinSans-Bold.ttf');
+}
+
+$fontXS: JosefinXS, 'sans-serif';
+$fontS: JosefinS;
+$fontM: JosefinM;
+$fontXL: JosefinXL;

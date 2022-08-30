@@ -23,7 +23,7 @@
   background-position: calc(var(--size) / -1.75) 0;
   transition: background 0.2s ease-out;
   box-shadow: 3px 4px 10px #000;
-  z-index: 999;
+  z-index: -2;
 }
 
 .switch:checked {

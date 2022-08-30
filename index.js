@@ -20,6 +20,7 @@ const initIndex = async () => {
   switchTheme(switchBtn, body);
   header(github_data);
   cards(repositories_url, newData);
+  /*
 
   // When the user scrolls down 50px from the top of the document, resize the header's font size
   window.onscroll = function () {
@@ -37,5 +38,6 @@ const initIndex = async () => {
       document.querySelector('header').style.fontSize = '90px';
     }
   }
+  */
 };
 initIndex();
