@@ -7,7 +7,7 @@ import { body, switchBtn } from './src/model/elements.js';
 import { header } from './src/view/header.js';
 import { cards } from './src/view/cards.js';
 // CONTROLLER
-import { switchTheme } from './src/controller/switch.js';
+// import { switchTheme } from './src/controller/switch.js';
 
 const initIndex = async () => {
   const github_data = await getData(GITHUB_URL);
@@ -17,7 +17,7 @@ const initIndex = async () => {
 
   const newData = await convertData(repositories_url, annexe_data);
 
-  switchTheme(switchBtn, body);
+  // switchTheme(switchBtn, body);
   header(github_data);
   cards(repositories_url, newData);
   /*

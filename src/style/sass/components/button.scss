@@ -1,5 +1,5 @@
 .contact {
-  background-color: $light_main;
+  background-color: transparent;
   padding: 7px 40px;
   border-radius: 10px;
   box-shadow: 2px 2px 10px #000;
@@ -7,11 +7,12 @@
   font-size: 1rem;
   margin-left: 50px;
   transition: 0.3s;
+  cursor: pointer;
   &:hover {
-    background: linear-gradient(to left, $light_typo2 55%, $light_main 50%)
+    background: linear-gradient(to left, $light_typo2 55%, transparent 50%)
       right;
     background-size: 200% 100%;
-    box-shadow: 2px 2px 10px $light_main;
+    color: $light_typo3;
   }
 }
 
@@ -26,6 +27,8 @@
   height: 25%;
   margin: auto;
   // font-size: clamp(5px, 3vh, 50px);
+  font-size: clamp(15px, 2.2vh, 30px);
+  font-weight: 600;
   background-color: transparent;
   justify-content: space-around;
   align-items: center;
@@ -72,8 +75,17 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .contact {
+    position: absolute;
+    right: 15%;
+    bottom: 5%;
+  }
+}
+
 @media screen and (max-width: 522px) {
   .contact {
+    position: inherit;
     margin-left: 0;
   }
   .navigate-btns {

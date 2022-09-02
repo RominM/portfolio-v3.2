@@ -12,6 +12,7 @@ const getTags = () => {
 
   tags.forEach((tag) => {
     const li = document.createElement('li');
+    li.classList.add('tag');
     li.innerHTML = '#' + tag;
     tagsList.append(li);
   });

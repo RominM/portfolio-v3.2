@@ -8,6 +8,8 @@
   box-shadow: 5px 5px 15px #000;
   transition: 0.3s;
   color: #000;
+  background-color: rgba(255, 255, 255, 0.488);
+  backdrop-filter: blur(8px) grayscale(65%);
   overflow: hidden;
   cursor: pointer;
   .cover {
@@ -29,7 +31,6 @@
     background-color: rgba(255, 255, 255, 0.045);
     backdrop-filter: blur(8px) grayscale(65%);
     transition: 0.3s;
-    // z-index: 1;
     .head-legend {
       display: flex;
       justify-content: space-between;
@@ -166,6 +167,14 @@
   // &:focus + &::before {
   //   display: block;
   // }
+  &::after {
+    content: 'This project is not update';
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -85%);
+    z-index: -2;
+  }
 }
 
 @media screen and (max-width: 522px) {

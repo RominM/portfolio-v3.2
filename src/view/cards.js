@@ -1,32 +1,36 @@
 import { handleSelect, removeChild } from '../controller/getLinks.js';
 import { getData } from '../model/request.js';
-const commingSoonPic = './../assets/Image-coming-soon.jpeg';
+const picIsComming = './../../public/images/Image-coming-soon.jpeg';
 const arrowImg = './../../public/images/circle-arrow-left-solid.svg';
 
 const cards = async (repositories, newData) => {
   const listOfRepos = await getData(repositories);
 
   listOfRepos.forEach((repo) => {
+    const main = document.querySelector('main');
+
     // get repo with star
-    const displayCondition = repo.stargazers_count;
     const card = document.createElement('a');
     card.classList.add('cards');
     card.id = repo.id;
     card.tabIndex = '0';
 
-    getCover(card, repo, newData);
-    getLegend(card, repo, newData);
-    // append only the repo with a star on GitHub
-    const main = document.querySelector('main');
-    displayCondition && main.append(card);
+    if (repo.stargazers_count) {
+      getCover(card, repo, newData);
+      getLegend(card, repo, newData);
+      // append only the repo with a star on GitHub
+      main.append(card);
+    }
   });
 };
 
 const getCover = (card, repo, newData) => {
   const cover = document.createElement('img');
   cover.classList.add('cover');
+
   newData.forEach((newD) => {
-    repo.id === newD.id && (cover.src = newD.cover);
+    repo.id === newD.id &&
+      (newD.cover ? (cover.src = newD.cover) : (cover.src = picIsComming));
   });
   card.append(cover);
 };
@@ -62,7 +66,6 @@ const getLegend = (card, repo, newData) => {
   // List of language
   const techList = document.createElement('ul');
   techList.classList.add('techList');
-  // const languages = repo.topics;
   newData.forEach((newD) => {
     if (repo.id === newD.id) {
       const logoArray = newD.tags;

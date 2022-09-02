@@ -18,7 +18,14 @@
   src: url('./../../../../public/fonts/Josefin_Sans/static/JosefinSans-Bold.ttf');
 }
 
+@font-face {
+  font-family: RobotoIt;
+  src: url('./../../../../public/fonts/Righteous/Righteous-Regular.ttf');
+}
+
 $fontXS: JosefinXS, 'sans-serif';
 $fontS: JosefinS;
 $fontM: JosefinM;
 $fontXL: JosefinXL;
+
+$fontName: RobotoIt;

@@ -6,18 +6,17 @@ header {
   width: 85%;
   font-family: $fontS;
   font-size: 1.2rem;
-  color: $light_typo1;
+  color: $light_typo3;
   margin: 25px auto;
-  z-index: -2;
   .description {
-    max-width: 50%;
+    max-width: 40%;
     &:first-child {
       margin-inline-start: 25px;
       margin-top: 40px;
       h1 {
         display: block;
         font-size: clamp(3em, 2.5rem, 2em);
-        font-family: $fontXL;
+        font-family: $fontName;
         color: $light_typo2;
         text-shadow: 0 0 5px #fff;
       }
@@ -27,13 +26,14 @@ header {
     }
   }
   .picture {
+    max-width: 40%;
     a {
       display: block;
       width: 205px;
       height: 205px;
       margin: auto;
       img {
-        border: solid 2px $light_typo1;
+        border: solid 2px $light_typo2;
         border-radius: 50%;
         box-shadow: 3px 3px 10px #000;
       }
@@ -49,10 +49,13 @@ header {
       max-width: 98%;
       text-align: center;
       margin-right: 18px;
+      text-shadow: 1px 1px 1px rgb(42, 42, 42);
       &:first-child {
-        margin-top: 95px;
+        margin-top: 85px;
         h1 {
           display: inline;
+          line-height: 1.2em;
+          text-shadow: 2px 2px 7px #000;
         }
       }
     }
