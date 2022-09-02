@@ -1,31 +1,31 @@
 @font-face {
   font-family: JosefinXS;
-  src: url('/public/fonts/Josefin_Sans/static/JosefinSans-ExtraLight.ttf');
+  src: url('/fonts/Josefin_Sans/static/JosefinSans-ExtraLight.ttf');
 }
 
 @font-face {
   font-family: JosefinS;
-  src: url('/public/fonts/Josefin_Sans/static/JosefinSans-Light.ttf');
+  src: url('/fonts/Josefin_Sans/static/JosefinSans-Light.ttf');
 }
 
 @font-face {
   font-family: JosefinM;
-  src: url('/public/fonts/Josefin_Sans/static/JosefinSans-Medium.ttf');
+  src: url('/fonts/Josefin_Sans/static/JosefinSans-Medium.ttf');
 }
 
 @font-face {
   font-family: JosefinXL;
-  src: url('/public/fonts/Josefin_Sans/static/JosefinSans-Bold.ttf');
+  src: url('/fonts/Josefin_Sans/static/JosefinSans-Bold.ttf');
 }
 
 @font-face {
   font-family: RobotoIt;
-  src: url('/public/fonts/Righteous/Righteous-Regular.ttf');
+  src: url('/fonts/Righteous/Righteous-Regular.ttf');
 }
 
 @font-face {
   font-family: RobotoIt;
-  src: url('./../../../../public/fonts/Righteous/Righteous-Regular.ttf');
+  src: url('./../../../../fonts/Righteous/Righteous-Regular.ttf');
 }
 
 $fontXS: JosefinXS, 'sans-serif';
