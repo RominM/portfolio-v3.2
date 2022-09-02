@@ -18,6 +18,10 @@
   font-family: RobotoIt;
   src: url("/public/fonts/Righteous/Righteous-Regular.ttf");
 }
+@font-face {
+  font-family: RobotoIt;
+  src: url("./../../../../public/fonts/Righteous/Righteous-Regular.ttf");
+}
 /*
 #68CEF7
 */
