@@ -1,6 +1,7 @@
 @import 'bases/fonts.scss';
 @import 'bases/colors.scss';
 @import 'layout/header.scss';
+@import 'layout/background.scss';
 @import 'components/toggle-switch.scss';
 @import 'components/button.scss';
 @import 'components/tags.scss';
@@ -15,41 +16,18 @@ html {
   left: 0;
   right: 0;
   font-family: $fontXS;
-  animation: changeBg 12s infinite;
+  // background: rgb(63, 94, 251);
+  // background: linear-gradient(176deg, $light_typo1 0%, $light_typo2 100%);
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    180deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
 }
 
-@keyframes changeBg {
-  0% {
-    background-image: url('./../../assets/low-poly-grid-haikei_0.svg');
-  }
-  10% {
-    background-image: url('./../../assets/low-poly-grid-haikei_1.svg');
-  }
-  10% {
-    background-image: url('./../../assets/low-poly-grid-haikei_2.svg');
-  }
-  30% {
-    background-image: url('./../../assets/low-poly-grid-haikei_3.svg');
-  }
-  40% {
-    background-image: url('./../../assets/low-poly-grid-haikei_4.svg');
-  }
-  50% {
-    background-image: url('./../../assets/low-poly-grid-haikei_5.svg');
-  }
-  60% {
-    background-image: url('./../../assets/low-poly-grid-haikei_6.svg');
-  }
-  70% {
-    background-image: url('./../../assets/low-poly-grid-haikei_7.svg');
-  }
-  80% {
-    background-image: url('./../../assets/low-poly-grid-haikei_8.svg');
-  }
-  90% {
-    background-image: url('./../../assets/low-poly-grid-haikei_9.svg');
-  }
-  100% {
-    background-image: url('./../../assets/low-poly-grid-haikei_10.svg');
+@media screen and (max-width: 1100px) {
+  html {
+    position: inherit;
   }
 }

@@ -9,20 +9,24 @@ main {
   flex-wrap: wrap;
   width: 80%;
   padding: 0 15px 0 15px;
-  margin: 20px auto;
+  margin: 20px auto 75px auto;
+  background-color: rgba(0, 0, 0, 0.171);
+  border-radius: 10px;
+  // box-shadow: 0px 0px 20px -5px #fff;
   overflow: scroll;
   overflow-x: hidden;
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
   scrollbar-width: none; /* for Firefox */
-  z-index: -2;
+  // z-index: -2;
 }
 
 main::-webkit-scrollbar {
   display: none; /* for Chrome, Safari, and Opera */
 }
 
-@media screen and (max-width: 522px) {
+@media screen and (max-width: 1100px) {
   main {
     position: inherit;
+    justify-content: center;
   }
 }

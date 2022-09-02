@@ -10,7 +10,7 @@ const handleSelect = (legend, repo, viewBtns, newData) => {
 
   newData.forEach((newD) => {
     if (repo.id === newD.id) {
-      const link = newD.link;
+      const link = newD.linkWeb;
       link && btnWebsite(link, viewBtns);
     }
   });
