@@ -1,6 +1,6 @@
 import { handleSelect, removeChild } from '../controller/getLinks.js';
 import { getData } from '../model/request.js';
-const picIsComming = '/public/images/Image-coming-soon.jpeg';
+const picIsComming = 'public/images/Image-coming-soon.jpeg';
 // const arrowImg = './../../public/images/circle-arrow-left-solid.svg';
 
 const cards = async (repositories, newData) => {
