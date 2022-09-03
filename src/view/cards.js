@@ -1,7 +1,7 @@
 import { handleSelect, removeChild } from '../controller/getLinks.js';
 import { getData } from '../model/request.js';
-const picIsComming = './../../public/images/Image-coming-soon.jpeg';
-const arrowImg = './../../public/images/circle-arrow-left-solid.svg';
+const picIsComming = '/public/images/Image-coming-soon.jpeg';
+// const arrowImg = './../../public/images/circle-arrow-left-solid.svg';
 
 const cards = async (repositories, newData) => {
   const listOfRepos = await getData(repositories);
@@ -55,10 +55,10 @@ const getLegend = (card, repo, newData) => {
   headLegend.classList.add('head-legend');
   const h2 = document.createElement('h2');
   h2.innerHTML = repo.name.replaceAll('_', ' ').toUpperCase();
-  const arrow = document.createElement('img');
-  arrow.classList.add('arrow');
-  arrow.src = arrowImg;
-  arrow.title = 'return to the liste';
+  // const arrow = document.createElement('img');
+  // arrow.classList.add('arrow');
+  // arrow.src = arrowImg;
+  // arrow.title = 'return to the liste';
 
   headLegend.append(h2);
   legend.append(headLegend);
