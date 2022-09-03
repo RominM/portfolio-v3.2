@@ -48,7 +48,7 @@ header .description:first-child {
 header .description:first-child h1 {
   display: block;
   font-size: clamp(3em, 2.5rem, 2em);
-  font-family: RobotoIt;
+  font-family: RobotoIt, "Arial";
   color: rgb(246, 72, 8);
   text-shadow: 0 0 5px #fff;
 }
