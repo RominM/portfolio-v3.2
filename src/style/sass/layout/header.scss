@@ -8,7 +8,9 @@ header {
   font-size: 1.2rem;
   color: $light_typo3;
   margin: 25px auto;
+
   .description {
+    text-shadow: 2px 2px 1px #000;
     max-width: 40%;
     &:first-child {
       margin-inline-start: 25px;
@@ -55,7 +57,6 @@ header {
         h1 {
           display: inline;
           line-height: 1.2em;
-          text-shadow: 2px 2px 7px #000;
         }
       }
     }

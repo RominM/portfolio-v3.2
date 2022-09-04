@@ -45,6 +45,7 @@ header {
   margin: 25px auto;
 }
 header .description {
+  text-shadow: 2px 2px 1px #000;
   max-width: 40%;
 }
 header .description:first-child {
@@ -93,7 +94,6 @@ header .picture a img {
   header .description:first-child h1 {
     display: inline;
     line-height: 1.2em;
-    text-shadow: 2px 2px 7px #000;
   }
   header .picture a {
     height: 0;
