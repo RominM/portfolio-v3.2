@@ -5,10 +5,10 @@ import { getData } from '../model/request.js';
 // =================
 
 // in "SRC" FOLDER
-// const myPic = '/src/assets/images/myImage.jpeg';
+const picIsComming = '/src/assets/images/Image-coming-soon.jpeg';
 
 // in "PUBLIC" FOLDER
-const picIsComming = '/public/images/Image-coming-soon.jpeg';
+// const picIsComming = '/public/images/Image-coming-soon.jpeg';
 // const myPic = './../../public/images/myImage.jpeg';
 
 // const arrowImg = './../../public/images/circle-arrow-left-solid.svg';
