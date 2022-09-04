@@ -14,7 +14,12 @@ const initIndex = async () => {
 
   const newData = await convertData(repositories_url, annexe_data);
 
-  header(github_data);
-  cards(repositories_url, newData);
+  setTimeout(() => {
+    header(github_data);
+    cards(repositories_url, newData);
+    const load = document.querySelector('.loading');
+    load.style.opacity = '0';
+    load.style.zIndex = '-999';
+  }, 1000);
 };
 initIndex();

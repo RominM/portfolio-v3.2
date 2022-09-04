@@ -7,7 +7,12 @@ import { form } from './src/controller/form.js';
 
 const initIndex = async () => {
   const github_data = await getData(GITHUB_URL);
-  header(github_data);
-  form();
+  setTimeout(() => {
+    header(github_data);
+    form();
+    const load = document.querySelector('.loading');
+    load.style.opacity = '0';
+    load.style.zIndex = '-999';
+  }, 250);
 };
 initIndex();
