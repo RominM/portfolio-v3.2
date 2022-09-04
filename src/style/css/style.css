@@ -14,22 +14,22 @@
   font-family: JosefinXL;
   src: url("/src/assets/fonts/Josefin_Sans/static/JosefinSans-Bold.ttf");
 }
+/*
 @font-face {
   font-family: RighteousReg;
-  src: url("/src/assets/fonts/Righteous/Righteous-Regular.ttf");
+  src: url('/src/assets/fonts/Righteous/Righteous-Regular.ttf');
 }
+*/
 /*
 @font-face {
   font-family: RighteousReg;
   src: url('/public/fonts/Righteous/Righteous-Regular.ttf');
 }
 */
-/*
 @font-face {
   font-family: RighteousReg;
-  src: url('./../../../../public/fonts/Righteous/Righteous-Regular.ttf');
+  src: url("./../../../../public/fonts/Righteous/Righteous-Regular.ttf");
 }
-*/
 /*
 #68CEF7
 */
