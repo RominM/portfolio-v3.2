@@ -4,47 +4,100 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/style/css/reset.css">
-    <link rel="stylesheet" href="./src/style/css/style.css">
+    <link rel="stylesheet" href="./src/style/css/reset.css" />
+    <link rel="stylesheet" href="./src/style/css/style.css" />
     <title>Contact me - Romin Manogil</title>
   </head>
   <body>
-    <input name="checkbox" type="checkbox" checked class="switch" style="--size: 25px; --inactive: #F08080; --active: #32CD32"></input>
+    <!-- background-animation -->
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
     <header>
       <div class="description">
-        <span>I'm <h1></h1>.
-          <br>
+        <span
+          >I'm
+          <h1></h1>
+          .
+          <br />
           Front-end Developer from <span></span>
         </span>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam in hic atque aut, pariatur quis minima, quisquam maiores cupiditate dicta, magnam obcaecati qui soluta. Vitae maxime dicta voluptatum laudantium adipisci?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam in
+          hic atque aut, pariatur quis minima, quisquam maiores cupiditate
+          dicta, magnam obcaecati qui soluta. Vitae maxime dicta voluptatum
+          laudantium adipisci?
         </p>
+        <a href="index.html" title="Back to Home" class="contact">Projects</a>
       </div>
       <div class="picture">
         <a href="index.html">
-          <img src="" alt="my avatar" class="avatar">
+          <img src="" alt="my avatar" class="avatar" />
         </a>
         <ul class="tags"></ul>
       </div>
     </header>
-    <form action="">
-      <label>
-        Full Name
-        <input name="name" type="text" />
-      </label>
-      <label>
-        Email
-        <input name="email" type="email" />
-      </label>
-      <label>
-        Message
-        <textarea name="message" cols="30" rows="10"></textarea>
-      </label>
-      <label>
-        <input type="submit" name="submit" id="submit">
-      </label>
-    </form>
-    <div class="network"></div>
-    <script src="index.js" type="module"></script>
+    <main id="main-contact">
+      <div class="nav">
+        <a href="index.html" class="btn-nav notNav">Projects</a>
+        <a href="contact.html" class="btn-nav">Contact</a>
+      </div>
+      <fieldset>
+        <legend>Keep in touch</legend>
+        <form action="">
+          <label
+            class="form-data"
+            data-error="at least 2 characters"
+            data-error-visible="false"
+          >
+            Full Name
+            <input name="name" type="text" class="input" />
+          </label>
+          <label
+            class="form-data"
+            data-error="example@domain.com"
+            data-error-visible="false"
+          >
+            Email
+            <input name="email" type="email" class="input" />
+          </label>
+          <label
+            class="form-data"
+            data-error="at least 10 characters"
+            data-error-visible="false"
+          >
+            Message
+            <textarea name="message" cols="30" rows="5"></textarea>
+          </label>
+          <label>
+            <input
+              name="submit"
+              type="submit"
+              id="submit"
+              class="submit"
+              value="Submit"
+            />
+          </label>
+        </form>
+      </fieldset>
+
+      <div class="network"></div>
+    </main>
+
+    <script src="contact.js" type="module"></script>
   </body>
 </html>

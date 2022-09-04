@@ -17,20 +17,35 @@
   font-family: JosefinXL;
   src: url('/src/assets/fonts/Josefin_Sans/static/JosefinSans-Bold.ttf');
 }
+
+// IS WORKING LOCALY
+// =================
+
+// in "SRC" FOLDER
 /*
 @font-face {
-  font-family: RobotoIt;
-  src: url('/public/fonts/Righteous/Righteous-Regular.ttf');
-}
-*/
-@font-face {
-  font-family: RobotoIt;
+  font-family: RighteousReg;
   src: url('/src/assets/fonts/Righteous/Righteous-Regular.ttf');
 }
+*/
+// in "PUBLIC" FOLDER
+
+@font-face {
+  font-family: RighteousReg;
+  src: url('/public/fonts/Righteous/Righteous-Regular.ttf');
+}
+
+/*
+@font-face {
+  font-family: RighteousReg;
+  src: url('./../../../../public/fonts/Righteous/Righteous-Regular.ttf');
+}
+*/
+// NO ONE WORKING ONLINE
 
 $fontXS: JosefinXS, 'sans-serif';
 $fontS: JosefinS;
 $fontM: JosefinM;
 $fontXL: JosefinXL;
 
-$fontName: RobotoIt, 'Arial';
+$fontName: RighteousReg, 'Arial';

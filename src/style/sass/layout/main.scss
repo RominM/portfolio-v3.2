@@ -11,13 +11,35 @@ main {
   padding: 0 15px 0 15px;
   margin: 20px auto 75px auto;
   background-color: rgba(0, 0, 0, 0.171);
-  border-radius: 10px;
-  // box-shadow: 0px 0px 20px -5px #fff;
-  overflow: scroll;
+  border-radius: 10px 10px 10px 10px;
   overflow-x: hidden;
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
   scrollbar-width: none; /* for Firefox */
-  // z-index: -2;
+  .nav {
+    position: absolute;
+    top: -32px;
+    left: 0;
+    // position: fixed;
+    // top: 33.8%;
+    // left: 9%;
+    .btn-nav {
+      background-color: rgba(0, 0, 0, 0.171);
+      padding: 16px;
+      font-family: $fontM;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      text-decoration: underline 1px;
+      transition: 0.3s;
+      &:hover {
+        text-decoration: underline 1px;
+      }
+    }
+    .notNav {
+      background-color: rgba(0, 0, 0, 0.279);
+      font-family: $fontS;
+      text-decoration: underline 0 transparent;
+    }
+  }
 }
 
 main::-webkit-scrollbar {

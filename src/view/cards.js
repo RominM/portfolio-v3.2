@@ -1,13 +1,23 @@
 import { handleSelect, removeChild } from '../controller/getLinks.js';
 import { getData } from '../model/request.js';
-const picIsComming = '/src/assets/images/Image-coming-soon.jpeg';
+
+// IS WORKING LOCALY
+// =================
+
+// in "SRC" FOLDER
+// const myPic = '/src/assets/images/myImage.jpeg';
+
+// in "PUBLIC" FOLDER
+const picIsComming = '/public/images/Image-coming-soon.jpeg';
+// const myPic = './../../public/images/myImage.jpeg';
+
 // const arrowImg = './../../public/images/circle-arrow-left-solid.svg';
 
 const cards = async (repositories, newData) => {
   const listOfRepos = await getData(repositories);
 
   listOfRepos.forEach((repo) => {
-    const main = document.querySelector('main');
+    const main = document.querySelector('#main-index');
 
     // get repo with star
     const card = document.createElement('a');
