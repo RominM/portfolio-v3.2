@@ -1,18 +1,18 @@
 @font-face {
   font-family: JosefinXS;
-  src: url('./../../assets/fonts/Josefin_Sans/static/JosefinSans-ExtraLight.ttf');
+  src: url("./../../assets/fonts/Josefin_Sans/static/JosefinSans-ExtraLight.ttf");
 }
 @font-face {
   font-family: JosefinS;
-  src: url('./../../assets/fonts/Josefin_Sans/static/JosefinSans-Light.ttf');
+  src: url("./../../assets/fonts/Josefin_Sans/static/JosefinSans-Light.ttf");
 }
 @font-face {
   font-family: JosefinM;
-  src: url('./../../assets/fonts/Josefin_Sans/static/JosefinSans-Medium.ttf');
+  src: url("./../../assets/fonts/Josefin_Sans/static/JosefinSans-Medium.ttf");
 }
 @font-face {
   font-family: JosefinXL;
-  src: url('./../../assets/fonts/Josefin_Sans/static/JosefinSans-Bold.ttf');
+  src: url("./../../assets/fonts/Josefin_Sans/static/JosefinSans-Bold.ttf");
 }
 /*
 @font-face {
@@ -22,7 +22,7 @@
 */
 @font-face {
   font-family: RighteousReg;
-  src: url('./../../assets/fonts/Righteous/Righteous-Regular.ttf');
+  src: url("./../../assets/fonts/Righteous/Righteous-Regular.ttf");
 }
 /*
 @font-face {
@@ -55,7 +55,7 @@ header .description:first-child {
 header .description:first-child h1 {
   display: block;
   font-size: clamp(3em, 2.5rem, 2em);
-  font-family: RighteousReg, 'Arial';
+  font-family: RighteousReg, "Arial";
   color: rgb(246, 72, 8);
   text-shadow: 0 0 5px #fff;
 }
@@ -250,16 +250,7 @@ header .picture a img {
   cursor: pointer;
   border: solid 2px;
   background-color: var(--inactive);
-  background-image: radial-gradient(
-      circle calc(var(--size) / 2.1),
-      #fff 100%,
-      rgba(0, 0, 0, 0) 0
-    ),
-    radial-gradient(
-      circle calc(var(--size) / 1.5),
-      rgba(0, 0, 0, 0.2) 0%,
-      rgba(0, 0, 0, 0) 100%
-    );
+  background-image: radial-gradient(circle calc(var(--size) / 2.1), #fff 100%, rgba(0, 0, 0, 0) 0), radial-gradient(circle calc(var(--size) / 1.5), rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
   background-repeat: no-repeat;
   background-position: calc(var(--size) / -1.75) 0;
   transition: background 0.2s ease-out;
@@ -277,15 +268,14 @@ header .picture a img {
   padding: 7px 40px;
   border-radius: 10px;
   box-shadow: 2px 2px 10px #000;
-  font-family: JosefinXS, 'sans-serif';
+  font-family: JosefinXS, "sans-serif";
   font-size: 1rem;
   transition: 0.3s;
   font-family: JosefinM;
   cursor: pointer;
 }
 .contact:hover {
-  background: linear-gradient(to left, rgb(246, 72, 8) 55%, transparent 50%)
-    right;
+  background: linear-gradient(to left, rgb(246, 72, 8) 55%, transparent 50%) right;
   background-size: 200% 100%;
   color: rgb(253, 243, 45);
 }
@@ -339,15 +329,14 @@ header .picture a img {
   padding: 7px 40px;
   border-radius: 10px;
   box-shadow: 2px 2px 10px #000;
-  font-family: JosefinXS, 'sans-serif';
+  font-family: JosefinXS, "sans-serif";
   font-size: 1rem;
   transition: 0.3s;
   font-family: JosefinM;
   cursor: pointer;
 }
 .submit:hover {
-  background: linear-gradient(to left, rgb(246, 72, 8) 55%, transparent 50%)
-    right;
+  background: linear-gradient(to left, rgb(246, 72, 8) 55%, transparent 50%) right;
   background-size: 200% 100%;
   color: rgb(253, 243, 45);
 }
@@ -542,7 +531,7 @@ header .picture a img {
   padding: 15px;
 }
 .cards::after {
-  content: 'This project is not update';
+  content: "This project is not update";
   position: absolute;
   top: 35%;
   left: 50%;
@@ -612,21 +601,19 @@ fieldset form label {
 fieldset form label:target {
   font-weight: bolder;
 }
-fieldset form .input,
-fieldset form textarea {
+fieldset form .input, fieldset form textarea {
   display: block;
   width: 100%;
   margin: 12px auto;
   padding: 7px;
   background-color: transparent;
   border: solid 1px;
-  font-family: RighteousReg, 'Arial';
+  font-family: RighteousReg, "Arial";
   font-size: 1em;
   border-radius: 5px;
   outline: none;
 }
-fieldset form .input:focus,
-fieldset form textarea:focus {
+fieldset form .input:focus, fieldset form textarea:focus {
   background-color: rgba(0, 0, 0, 0.114);
   box-shadow: 3px 3px 10px #000;
 }
@@ -643,18 +630,15 @@ fieldset form textarea:focus {
   transition: 0.3s;
 }
 
-.form-data[data-error-visible='true']::after {
+.form-data[data-error-visible=true]::after {
   opacity: 1;
 }
 
-.form-data[data-error-visible='true'] .input,
-.form-data[data-error-visible='true'] fieldset form textarea,
-fieldset form .form-data[data-error-visible='true'] textarea {
+.form-data[data-error-visible=true] .input, .form-data[data-error-visible=true] fieldset form textarea, fieldset form .form-data[data-error-visible=true] textarea {
   border: 1px solid rgb(246, 72, 8);
 }
 
-.input[data-error]::after,
-fieldset form textarea[data-error]::after {
+.input[data-error]::after, fieldset form textarea[data-error]::after {
   content: attr(data-error);
   font-size: 0.4em;
   color: red;
@@ -677,11 +661,7 @@ fieldset form textarea[data-error]::after {
   right: 0;
   opacity: 1;
   background: rgb(34, 193, 195);
-  background: linear-gradient(
-    180deg,
-    rgb(34, 193, 195) 0%,
-    rgb(253, 187, 45) 100%
-  );
+  background: linear-gradient(180deg, rgb(34, 193, 195) 0%, rgb(253, 187, 45) 100%);
   transition: 0.5s;
   z-index: 999;
 }
@@ -750,37 +730,37 @@ fieldset form textarea[data-error]::after {
 
 @keyframes changeBg {
   0% {
-    background-image: url('./../../assets/low-poly-grid-haikei_0.svg');
+    background-image: url("./../../assets/low-poly-grid-haikei_0.svg");
   }
   10% {
-    background-image: url('./../../assets/low-poly-grid-haikei_1.svg');
+    background-image: url("./../../assets/low-poly-grid-haikei_1.svg");
   }
   10% {
-    background-image: url('./../../assets/low-poly-grid-haikei_2.svg');
+    background-image: url("./../../assets/low-poly-grid-haikei_2.svg");
   }
   30% {
-    background-image: url('./../../assets/low-poly-grid-haikei_3.svg');
+    background-image: url("./../../assets/low-poly-grid-haikei_3.svg");
   }
   40% {
-    background-image: url('./../../assets/low-poly-grid-haikei_4.svg');
+    background-image: url("./../../assets/low-poly-grid-haikei_4.svg");
   }
   50% {
-    background-image: url('./../../assets/low-poly-grid-haikei_5.svg');
+    background-image: url("./../../assets/low-poly-grid-haikei_5.svg");
   }
   60% {
-    background-image: url('./../../assets/low-poly-grid-haikei_6.svg');
+    background-image: url("./../../assets/low-poly-grid-haikei_6.svg");
   }
   70% {
-    background-image: url('./../../assets/low-poly-grid-haikei_7.svg');
+    background-image: url("./../../assets/low-poly-grid-haikei_7.svg");
   }
   80% {
-    background-image: url('./../../assets/low-poly-grid-haikei_8.svg');
+    background-image: url("./../../assets/low-poly-grid-haikei_8.svg");
   }
   90% {
-    background-image: url('./../../assets/low-poly-grid-haikei_9.svg');
+    background-image: url("./../../assets/low-poly-grid-haikei_9.svg");
   }
   100% {
-    background-image: url('./../../assets/low-poly-grid-haikei_10.svg');
+    background-image: url("./../../assets/low-poly-grid-haikei_10.svg");
   }
 }
 main {
@@ -840,13 +820,9 @@ html {
   bottom: 0;
   left: 0;
   right: 0;
-  font-family: JosefinXS, 'sans-serif';
+  font-family: JosefinXS, "sans-serif";
   background: rgb(34, 193, 195);
-  background: linear-gradient(
-    180deg,
-    rgb(34, 193, 195) 0%,
-    rgb(253, 187, 45) 100%
-  );
+  background: linear-gradient(180deg, rgb(34, 193, 195) 0%, rgb(253, 187, 45) 100%);
 }
 
 @media screen and (max-width: 1100px) {
