@@ -1,17 +1,7 @@
 import { handleSelect, removeChild } from '../controller/getLinks.js';
 import { getData } from '../model/request.js';
 
-// IS WORKING LOCALY
-// =================
-
-// in "SRC" FOLDER
-// const picIsComming = '/src/assets/images/coming-soon.jpeg';
-
-// in "PUBLIC" FOLDER
 const picIsComming = '/portfolio-v3.2/public/images/coming-soon.jpeg';
-// const myPic = './../../public/images/coming-soon.jpeg';
-
-// const arrowImg = './../../public/images/circle-arrow-left-solid.svg';
 
 const cards = async (repositories, newData) => {
   const listOfRepos = await getData(repositories);
