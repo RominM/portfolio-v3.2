@@ -55,10 +55,6 @@ const getLegend = (card, repo, newData) => {
   headLegend.classList.add('head-legend');
   const h2 = document.createElement('h2');
   h2.innerHTML = repo.name.replaceAll('_', ' ').toUpperCase();
-  // const arrow = document.createElement('img');
-  // arrow.classList.add('arrow');
-  // arrow.src = arrowImg;
-  // arrow.title = 'return to the liste';
 
   headLegend.append(h2);
   legend.append(headLegend);

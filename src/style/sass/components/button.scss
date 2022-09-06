@@ -97,14 +97,13 @@
   .contact {
     position: absolute;
     right: 15%;
-    bottom: 5%;
+    bottom: 2%;
   }
 }
 
 @media screen and (max-width: 522px) {
   .contact {
-    position: inherit;
-    margin-left: 0;
+    margin-right: 12%;
   }
   .navigate-btns {
     display: flex;
@@ -113,5 +112,13 @@
     .website-btn {
       background-color: #fff;
     }
+  }
+}
+
+@media screen and (max-height: 1050px) {
+  .contact {
+    position: absolute;
+    right: 15%;
+    bottom: 2%;
   }
 }

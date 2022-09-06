@@ -11,7 +11,7 @@ header {
 
   .description {
     text-shadow: 2px 2px 1px #000;
-    max-width: 40%;
+    width: 40%;
     &:first-child {
       margin-inline-start: 25px;
       margin-top: 40px;
@@ -77,6 +77,28 @@ header {
           border-radius: 0;
         }
       }
+    }
+  }
+}
+@media screen and (max-height: 1350px) {
+  header {
+    width: 80%;
+    height: 15%;
+    .description {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (max-height: 930px) {
+  header {
+    width: 100%;
+    .description {
+      width: 70%;
+      height: 25%;
+    }
+    .picture {
+      width: 25%;
     }
   }
 }

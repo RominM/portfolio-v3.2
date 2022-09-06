@@ -1,10 +1,13 @@
 .tags {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   .tag {
     background-color: #fff;
     margin: 10px;
-    padding: 5px;
+    padding: 4px;
     font-family: $fontM;
+    font-size: 0.8em;
     color: $light_main;
     border: solid 1px $light_main2;
     border-radius: 10px;

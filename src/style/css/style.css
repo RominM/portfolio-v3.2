@@ -14,22 +14,10 @@
   font-family: JosefinXL;
   src: url("./../../assets/fonts/Josefin_Sans/static/JosefinSans-Bold.ttf");
 }
-/*
-@font-face {
-  font-family: RighteousReg;
-  src: url('/src/assets/fonts/Righteous/Righteous-Regular.ttf');
-}
-*/
 @font-face {
   font-family: RighteousReg;
   src: url("./../../assets/fonts/Righteous/Righteous-Regular.ttf");
 }
-/*
-@font-face {
-  font-family: RighteousReg;
-  src: url('./../../../../public/fonts/Righteous/Righteous-Regular.ttf');
-}
-*/
 /*
 #68CEF7
 */
@@ -46,7 +34,7 @@ header {
 }
 header .description {
   text-shadow: 2px 2px 1px #000;
-  max-width: 40%;
+  width: 40%;
 }
 header .description:first-child {
   margin-inline-start: 25px;
@@ -110,6 +98,27 @@ header .picture a img {
     object-position: 50% 25%;
     opacity: 0.2;
     border-radius: 0;
+  }
+}
+@media screen and (max-height: 1350px) {
+  header {
+    width: 80%;
+    height: 15%;
+  }
+  header .description {
+    width: 50%;
+  }
+}
+@media screen and (max-height: 930px) {
+  header {
+    width: 100%;
+  }
+  header .description {
+    width: 70%;
+    height: 25%;
+  }
+  header .picture {
+    width: 25%;
   }
 }
 .circles {
@@ -357,13 +366,12 @@ header .picture a img {
   .contact {
     position: absolute;
     right: 15%;
-    bottom: 5%;
+    bottom: 2%;
   }
 }
 @media screen and (max-width: 522px) {
   .contact {
-    position: inherit;
-    margin-left: 0;
+    margin-right: 12%;
   }
   .navigate-btns {
     display: flex;
@@ -374,14 +382,24 @@ header .picture a img {
     background-color: #fff;
   }
 }
+@media screen and (max-height: 1050px) {
+  .contact {
+    position: absolute;
+    right: 15%;
+    bottom: 2%;
+  }
+}
 .tags {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .tags .tag {
   background-color: #fff;
   margin: 10px;
-  padding: 5px;
+  padding: 4px;
   font-family: JosefinM;
+  font-size: 0.8em;
   color: #1f2100;
   border: solid 1px #297ea6;
   border-radius: 10px;
@@ -395,8 +413,8 @@ header .picture a img {
 }
 .cards {
   position: relative;
-  width: 385px;
-  height: 250px;
+  width: clamp(220px, 25%, 500px);
+  height: clamp(200px, 15vw, 280px);
   margin: 50px 10px;
   border: solid #1f2100 5px;
   border-radius: 10px;
@@ -420,7 +438,7 @@ header .picture a img {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 33%;
+  height: 35%;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   border-top: solid 1px #1f2100;
@@ -439,24 +457,21 @@ header .picture a img {
   letter-spacing: 7px;
   word-spacing: 4px;
 }
-.cards .legend .head-legend .arrow {
-  display: none;
-  width: 25px;
-  height: 25px;
-}
 .cards .legend .techList {
   position: absolute;
   bottom: 0;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   justify-content: space-between;
-  text-align: center;
-  width: 85%;
+  width: 90%;
   height: 20%;
-  margin: 15px 15px 20px 27px;
+  margin: 10px auto;
 }
 .cards .legend .techList .logo img {
-  width: clamp(25px, 80%, 100px);
-  height: clamp(25px, 80%, 100px);
+  width: clamp(20px, 80%, 75px);
+  height: clamp(20px, 60%, 50px);
 }
 .cards .legend .description {
   display: none;
@@ -514,13 +529,13 @@ header .picture a img {
 .cards:focus .description {
   display: none;
 }
-.cards:hover .legend > .languageList {
-  margin: auto;
-  padding: 15px;
+.cards:hover .legend > .techList {
+  top: 80%;
+  bottom: 20%;
 }
-.cards:focus .legend > .languageList {
-  margin: auto;
-  padding: 15px;
+.cards:focus .legend > .techList {
+  top: 80%;
+  bottom: 20%;
 }
 .cards:hover .legend > h2 {
   margin: auto;
@@ -540,6 +555,9 @@ header .picture a img {
 }
 
 @media screen and (max-width: 522px) {
+  .cards {
+    width: 95%;
+  }
   .cards:focus .description {
     display: block;
   }
@@ -772,8 +790,8 @@ main {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 80%;
-  padding: 0 15px 0 15px;
+  width: 85%;
+  padding: 0 20px 0 20px;
   margin: 20px auto 75px auto;
   background-color: rgba(0, 0, 0, 0.171);
   border-radius: 10px 10px 10px 10px;
@@ -808,7 +826,7 @@ main::-webkit-scrollbar {
   display: none; /* for Chrome, Safari, and Opera */
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1150px) {
   main {
     position: inherit;
     justify-content: center;

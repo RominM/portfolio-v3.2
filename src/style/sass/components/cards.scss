@@ -1,7 +1,7 @@
 .cards {
   position: relative;
-  width: 385px;
-  height: 250px;
+  width: clamp(220px, 25%, 500px);
+  height: clamp(200px, 15vw, 280px);
   margin: 50px 10px;
   border: solid $light_main 5px;
   border-radius: 10px;
@@ -24,7 +24,7 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 33%;
+    height: 35%;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     border-top: solid 1px $light_main;
@@ -41,24 +41,21 @@
         letter-spacing: 7px;
         word-spacing: 4px;
       }
-      .arrow {
-        display: none;
-        width: 25px;
-        height: 25px;
-      }
     }
     .techList {
       position: absolute;
       bottom: 0;
+      left: 50%;
+      right: 50%;
+      transform: translate(-50%, -50%);
       display: flex;
       justify-content: space-between;
-      text-align: center;
-      width: 85%;
+      width: 90%;
       height: 20%;
-      margin: 15px 15px 20px 27px;
+      margin: 10px auto;
       .logo img {
-        width: clamp(25px, 80%, 100px);
-        height: clamp(25px, 80%, 100px);
+        width: clamp(20px, 80%, 75px);
+        height: clamp(20px, 60%, 50px);
       }
     }
     .description {
@@ -120,13 +117,13 @@
     display: none;
   }
 
-  &:hover .legend > .languageList {
-    margin: auto;
-    padding: 15px;
+  &:hover .legend > .techList {
+    top: 80%;
+    bottom: 20%;
   }
-  &:focus .legend > .languageList {
-    margin: auto;
-    padding: 15px;
+  &:focus .legend > .techList {
+    top: 80%;
+    bottom: 20%;
   }
 
   &:hover .legend > h2 {
@@ -149,6 +146,7 @@
 
 @media screen and (max-width: 522px) {
   .cards {
+    width: 95%;
     &:focus .description {
       display: block;
     }
