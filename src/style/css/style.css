@@ -1,18 +1,18 @@
 @font-face {
   font-family: JosefinXS;
-  src: url("/src/assets/fonts/Josefin_Sans/static/JosefinSans-ExtraLight.ttf");
+  src: url("portfolio-v3.2/public/fonts/Josefin_Sans/static/JosefinSans-ExtraLight.ttf");
 }
 @font-face {
   font-family: JosefinS;
-  src: url("/src/assets/fonts/Josefin_Sans/static/JosefinSans-Light.ttf");
+  src: url("portfolio-v3.2/public/fonts/fonts/Josefin_Sans/static/JosefinSans-Light.ttf");
 }
 @font-face {
   font-family: JosefinM;
-  src: url("/src/assets/fonts/Josefin_Sans/static/JosefinSans-Medium.ttf");
+  src: url("portfolio-v3.2/public/fonts/Josefin_Sans/static/JosefinSans-Medium.ttf");
 }
 @font-face {
   font-family: JosefinXL;
-  src: url("/src/assets/fonts/Josefin_Sans/static/JosefinSans-Bold.ttf");
+  src: url("portfolio-v3.2/public/fonts/fonts/Josefin_Sans/static/JosefinSans-Bold.ttf");
 }
 /*
 @font-face {
@@ -22,7 +22,7 @@
 */
 @font-face {
   font-family: RighteousReg;
-  src: url("/portfolio-v3.2/public/fonts/Righteous/Righteous-Regular.ttf");
+  src: url("portfolio-v3.2/public/fonts/Righteous/Righteous-Regular.ttf");
 }
 /*
 @font-face {
