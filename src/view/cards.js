@@ -8,7 +8,7 @@ import { getData } from '../model/request.js';
 // const picIsComming = '/src/assets/images/coming-soon.jpeg';
 
 // in "PUBLIC" FOLDER
-const picIsComming = 'public/images/coming-soon.jpeg';
+const picIsComming = '/portfolio-v3.2/public/images/coming-soon.jpeg';
 // const myPic = './../../public/images/coming-soon.jpeg';
 
 // const arrowImg = './../../public/images/circle-arrow-left-solid.svg';
