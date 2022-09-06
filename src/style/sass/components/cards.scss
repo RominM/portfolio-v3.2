@@ -30,6 +30,9 @@
     border-top: solid 1px $light_main;
     background-color: rgba(255, 255, 255, 0.045);
     backdrop-filter: blur(8px) grayscale(65%);
+    -webkit-backdrop-filter: blur(8px) grayscale(65%);
+    -moz-backdrop-filter: blur(8px) grayscale(65%);
+    // filter: blur(15px);
     transition: 0.3s;
     .head-legend {
       display: flex;

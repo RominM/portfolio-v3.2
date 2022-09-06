@@ -444,6 +444,8 @@ header .picture a img {
   border-top: solid 1px #1f2100;
   background-color: rgba(255, 255, 255, 0.045);
   backdrop-filter: blur(8px) grayscale(65%);
+  -webkit-backdrop-filter: blur(8px) grayscale(65%);
+  -moz-backdrop-filter: blur(8px) grayscale(65%);
   transition: 0.3s;
 }
 .cards .legend .head-legend {
@@ -832,6 +834,14 @@ main::-webkit-scrollbar {
     justify-content: center;
   }
 }
+footer {
+  display: flex;
+  width: 100%;
+}
+footer img {
+  width: 20px;
+}
+
 html {
   position: absolute;
   top: 0;
