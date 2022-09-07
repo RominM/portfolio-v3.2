@@ -66,11 +66,17 @@
       </div>
       <fieldset>
         <legend>Keep in touch</legend>
-        <form name="contact" method="POST" data-netlify="true">
-          <input type="hidden" name="contact" value="contact" />
+        <!-- is update -->
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          action="tanks.html"
+        >
+          <!-- <input type="hidden" name="form-contact" value="contact" /> -->
           <label
             class="form-data"
-            data-error="at least 2 characters"
+            data-error="2 characters at least"
             data-error-visible="false"
           >
             Full Name
@@ -86,17 +92,17 @@
           </label>
           <label
             class="form-data"
-            data-error="at least 10 characters"
+            data-error="10 characters at least"
             data-error-visible="false"
           >
             Message
             <textarea name="message" cols="30" rows="5"></textarea>
           </label>
           <label>
-            <input
+            <button
               name="submit"
               type="submit"
-              id="submit"
+              id="btnSubmit"
               class="submit"
               value="Submit"
             />

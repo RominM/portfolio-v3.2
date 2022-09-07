@@ -14,9 +14,9 @@ const form = () => {
   const fullName = document.querySelector('input[name="name"]');
   const email = document.querySelector('input[name="email"]');
   const message = document.querySelector('textarea');
-  const submit = document.querySelector('input[name="submit"]');
+  const btnSubmit = document.querySelector('#btnSubmit');
 
-  checkForm(fullName, email, message, submit);
+  checkForm(fullName, email, message, btnSubmit);
 };
 
 const checkName = (fullName) => {
@@ -43,22 +43,23 @@ const checkEmail = (email) => {
 const checkMessage = (message) => {
   const msgValue = message.value;
 
-  msgValue.length > 49
+  msgValue.length > 9
     ? message.parentNode.setAttribute('data-error-visible', 'false') &
       (setState.message.state = true)
     : message.parentNode.setAttribute('data-error-visible', 'true') &
       (setState.message.state = false);
 };
 
-const checkForm = (fullName, email, message, submit) => {
+const checkForm = (fullName, email, message, btnSubmit) => {
   fullName.addEventListener('input', () => checkName(fullName));
   email.addEventListener('input', () => checkEmail(email));
-  submit.addEventListener('click', (e) => {
+  btnSubmit.addEventListener('click', (e) => {
     e.preventDefault();
     checkName(fullName);
     checkMessage(message);
     checkEmail(email);
     checkState();
+    return true;
   });
 
   const checkState = () => {
@@ -71,10 +72,19 @@ const checkForm = (fullName, email, message, submit) => {
 
     checker(state) && sendForm();
   };
-
+  /*
+  const sendForm = () => {
+    const form = document.querySelector('form');
+    console.log(form);
+    form.reset();
+    form.submit();
+  };
+  */
   const sendForm = () => {
     const form = document.querySelector('form');
     form.reset();
+    const submitFormFunction = Object.getPrototypeOf(form).submit;
+    submitFormFunction.call(form);
   };
 };
 export { form };
