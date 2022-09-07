@@ -170,8 +170,8 @@
   {
     "id": "",
     "title": "FindMyCar",
-    "cover": "",
-    "linkWeb": "",
+    "cover": "public/images/find_my_car.PNG",
+    "linkWeb": "https://findyourcar-vmctest.netlify.app/",
     "tags": [
       "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg",
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
